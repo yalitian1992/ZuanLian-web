@@ -1,0 +1,297 @@
+
+/*CSS初始化*/
+html {
+    font-size:12px;
+    font-size:1.2rem ;
+}
+body,h1,h2,h3,h4,h5,h6,p,div,ul,ol,dl,dt,dd,li,video {
+    margin:0;
+    padding:0;
+    font-family: 'Arial', 'Times New Roman', 'Verdana','微软雅黑','Microsoft YaHei';
+    list-style: none;
+     word-spacing:0em; 
+     letter-spacing: 0.08em;
+    font-weight: 100;
+}
+*{
+    margin:0;
+    padding:0;
+/* 
+    transition: all 1s ease-in-out 0s; */
+}
+ul{
+    list-style: none;
+}
+li{
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+i,s {
+
+    font-style: normal;
+    text-decoration: none;
+}
+input,img {
+    margin:0;
+    padding:0;
+    border: 0 none;
+    outline-style: none;
+}
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+.clearfix{
+    zoom: 1;
+}
+table{
+    border-collapse:collapse;
+}
+button{
+    border-style: none;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.width-100 {
+    width:100%;
+}
+.height-100 {
+    height:100%;
+}
+
+
+
+
+
+
+/* logo */
+.logo {
+    position: fixed;
+    z-index: 99;
+    top: 45px;
+    left: 150px;
+    width: 167px;
+    height: 33px;
+    background-image: url(../images/Logo.png);
+}
+.logobox {
+    min-width: 1200px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.logobox .logo {
+    left: 4%;
+    top: 30px;
+}
+.en-cn {
+    position: fixed;
+    z-index: 99;
+    top: 45px;
+    right: 16px;
+    width: 167px;
+    height: 33px;
+    font-size: 15px;
+    color: #184A93;
+}
+
+.en-cn span {
+    padding: 0 5px;
+    color: #184A93;
+    letter-spacing: 0;
+}
+.en-cn span:hover {
+    color: #1876F4;
+}
+.en-cn span.current {
+    color: #1876F4;
+}
+
+
+/* 二级页面logo */
+.second-logo {
+    padding-top: 115px;
+    position: fixed;
+    margin-bottom: 165px;
+    width: 1200px;
+    height: 33px;
+    top: 0;
+    left: 4%;
+    z-index: 100;
+}
+.second-logo .logo-img {
+    width: 167px;
+    height: 33px;
+    position: absolute;
+    top: 31px;
+    left: 0;
+}
+
+
+
+/* 右边导航 */
+.main-nav {
+	height: 100%;
+	top: 0;
+	right: 0;
+	position: fixed;
+	z-index: 888;
+	color: #fff;
+    width: 0;
+}
+.main-nav .nav-logo {
+    position: absolute;
+    z-index: 9999;
+    top: 45px;
+    left: 60px;
+    transition: all 1s;
+}
+.main-nav .nav-zhezhao {
+    position: absolute;
+	z-index: 886;
+    top: -5000px;
+    right: 0px;
+    width: 5000px;
+    height: 10000px;
+    background: #000;
+    display: none;
+}
+
+.zhezhao-translate {
+	transform: translate(-10%,0);
+	transition: all 1s ease-in-out 0s;
+}
+.main-nav .nav-button {
+    position: fixed;
+	z-index: 9999;
+    top: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+	cursor: pointer;
+	color: #1878F1;
+}
+.main-nav .nav-button .spanbox {
+    padding-top: 1px;
+}
+.main-nav .nav-button span {
+
+    margin: 9px auto;
+    display: block;
+    width: 31px;
+    height: 2px;
+    opacity: 1;
+    transition: all 0.8s;
+    background: #1878F1;
+
+}
+/* 关闭样式 */
+.main-nav .nav-button .spanbox.to-off span.span1 {
+    transform: rotate(45deg);
+    transform-origin: 0 1px;
+    transition: all  0.8s;
+    background: #fff;
+}
+.main-nav .nav-button .spanbox.to-off span.span2 {
+    opacity: 0;
+    transition: all 0.8s;
+    background: #fff;
+}
+.main-nav .nav-button .spanbox.to-off span.span3 {
+    transform: rotate(-45deg);
+    transform-origin: 0 1px;
+    transition: all 0.8s;
+    background: #fff;
+}
+/* 打开样式 */
+.main-nav .nav-button .spanbox.to-on span.span1 {
+    transform: rotate(0deg);
+    transform-origin: 0 1px;
+    transition: all 0.8s;
+    background: #1878F1;
+}
+.main-nav .nav-button .spanbox.to-on span.span2 {
+    opacity: 1;
+    transition: all 0.8s;
+    background: #1878F1;
+}
+.main-nav .nav-button .spanbox.to-on span.span3 {
+    transform: rotate(0deg);
+    transform-origin: 0 1px;
+    transition: all 0.8s;
+    background: #1878F1;
+}
+
+.main-nav .nav-list {
+	position: absolute;
+	z-index: 999;
+	padding-left: 60px;
+	width: 0px;
+    min-width: 0px;
+	height: 100%;
+    right: 0;
+	overflow: hidden;
+	background: #1878F1;
+	opacity: 0;
+	transition: all 1s ease-in-out 0s;
+}
+
+
+
+
+.main-nav .nav-list ul {
+height: 82%;
+    padding-top: 170px;
+}
+.main-nav .nav-list li {
+    position: relative;
+    height: 12%;
+    width: 1000px;
+    padding-left: 60px;
+    font-size: 30px;
+} 
+.main-nav .nav-list li a {
+    line-height: 28px;
+    display: block;
+    transition: all 1s;
+}
+.main-nav .nav-list li span {
+	font-size: 14px;
+	padding-top: 12px;
+    opacity: 0.6;
+}
+
+.main-nav .nav-list li:nth-child(1) {
+
+}
+
+.main-nav .nav-list-show {
+	width: 18%;
+    min-width: 400px;
+	opacity: 1;
+	transition: all 1s ease-in-out 0s;
+}
+.main-nav .nav-list-hidden {
+	width: 0px;
+	transition: all 0s ease-in-out 0s;
+}
+
+
+
+
+
+.main-nav .nav-list li a:hover {
+    transform: translate(20px,0);
+    transition: all 1s;
+}

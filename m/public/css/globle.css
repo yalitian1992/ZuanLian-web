@@ -1,0 +1,104 @@
+/*CSS初始化*/
+html {
+    font-size: calc(100vw/7.5);
+}
+
+body, h1, h2, h3, h4, h5, h6, p, div, ul, ol, dl, dt, dd, li, video {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+i, s {
+
+    font-style: normal;
+    text-decoration: none;
+}
+
+input, img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+button {
+    border-style: none;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* swiper样式修改部分 */
+
+.swiper-button-next.swiper-button-white,.swiper-button-next.swiper-button-white {
+    background-image: url(../../public/images/index/to-right-cujiantou.png);
+    background-size: .19rem .33rem;
+}
+.swiper-button-prev.swiper-button-white,  .swiper-container-rtl .swiper-button-next.swiper-button-white {
+    background-image:url(../../public/images/index/to-left-cujiantou.png);
+    background-size: .19rem .33rem;
+}
+.swiper-button-prev {
+    opacity: 1;
+}
+.swiper-button-next {
+    opacity: 1;
+}
+
+
+/* 底部 */
+
+.bottom {
+    text-align: center;
+    width: 100%;
+    color: #464e58;
+    background-color: #0e151d;
+    padding-top: .3rem;
+    padding-bottom: .39rem;
+    padding-left: .3rem;
+    font-size: .2rem;
+    line-height: .2rem;
+    /* position: absolute;
+    bottom: 0; */
+    transition: all 1s;
+}
+.bottom span {
+    padding-top: .2rem;
+    display: block;
+}

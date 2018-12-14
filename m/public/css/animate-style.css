@@ -1,0 +1,177 @@
+/* 全局文字动画 */
+.animate-nomal {
+
+}
+.active .animate-up.animate-to-up-1 {
+    animation: to-up 1s linear 0s 1;
+}
+.active .animate-up.animate-to-up-2 {
+    animation: to-up 1.1s linear 0s 1;
+}
+.active .animate-up.animate-to-up-3 {
+    animation: to-up 1.2s linear 0s 1;
+}
+.active .animate-up.animate-to-up-4 {
+    animation: to-up 1.3s linear 0s 1;
+}
+.active .animate-up.animate-to-up-5 {
+    animation: to-up 1.4s linear 0s 1;
+}
+.active .animate-up.animate-to-up-6 {
+    animation: to-up 1.5s linear 0s 1;
+}
+.active .animate-up.animate-to-up-7 {
+    animation: to-up 0.9s linear 0s 1;
+}
+.active .animate-up.animate-to-up-8 {
+    animation: to-up 0.9s linear 0s 1;
+}
+.active .animate-up.animate-to-up-9 {
+    animation: to-up 0.9s linear 0s 1;
+}
+
+
+
+.active .animate-down.animate-to-down-1 {
+    animation: to-down 1s linear 0s 1;
+}
+.active .animate-down.animate-to-down-2 {
+    animation: to-down 1.1s linear 0s 1;
+}
+.active .animate-down.animate-to-down-3 {
+    animation: to-down 1.2s linear 0s 1;
+}
+.active .animate-down.animate-to-down-4 {
+    animation: to-down 1.3s linear 0s 1;
+}
+.active .animate-down.animate-to-down-5 {
+    animation: to-down 1.4s linear 0s 1;
+}
+
+
+.active .animate-left.animate-to-left-1 {
+    animation: to-down 1s linear 0s 1;
+}
+.active .animate-left.animate-to-left-2 {
+    animation: to-down 1.1s linear 0s 1;
+}
+.active .animate-left.animate-to-left-3 {
+    animation: to-down 1.2s linear 0s 1;
+}
+.active .animate-left.animate-to-left-4 {
+    animation: to-down 1.3s linear 0s 1;
+}
+.active .animate-left.animate-to-left-5 {
+    animation: to-down 1.4s linear 0s 1;
+}
+
+
+/* 标准动画 */
+.animate-up-nomal {
+    animation: to-up 0.5s linear 0s 1;
+}
+.animate-down-nomal {
+    animation: to-down 0.5s linear 0s 1;
+}
+.animate-left-nomal {
+    animation: to-left 0.5s linear 0s 1;
+}
+.animate-right-nomal {
+    animation: to-right 0.5s linear 0s 1;
+}
+
+
+
+
+
+
+@keyframes to-up {
+    0%{transform: translate(0px,50px);opacity: 0.8;}
+    50%{transform: translate(0px,25px);opacity: 1;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+@keyframes to-down {
+    0%{transform: translate(0px,-50px);opacity: 0;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+
+@keyframes to-left {
+    0%{transform: translate(200px,0px);opacity: 0;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+@keyframes to-right {
+    0%{transform: translate(-200px,0px);opacity: 0;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+/* //延迟动画 */
+
+/* .animate-up-lazy {
+    animation: lazy-to-up 2s linear 0s 1;
+}
+.animate-left-lazy {
+    animation: lazy-to-left 2s linear 0s 1;
+}
+.animate-down-lazy {
+    animation: lazy-to-down 2s linear 0s 1;
+}
+@keyframes lazy-to-up {
+    0%{transform: translate(0px,150px);opacity: 0;}
+    50%{transform: translate(0px,0px);opacity: 0.5;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+@keyframes lazy-to-left {
+    0%{transform: translate(200px,0px);opacity: 0;}
+    100% {transform: translate(0px,0px);opacity:1;} 
+}
+@keyframes lazy-to-down {
+    0%{transform: translate(0px,-150px);opacity: 0;}
+    50%{transform: translate(0px,0px);opacity: 0.5;}
+    100% {transform: translate(0px,0px);opacity:1;}  
+} */
+
+
+/* //二级页内容动画上移动画 */
+.animate.animate-up.animate-up-none {
+    opacity: 0;
+    transform:translate(0px,80px);
+}
+.animate.animate-up.animate-up-show {
+    opacity: 1;
+    transform:translate(0px,0px);
+    transition:all 1s;
+}
+/* //二级页内容动画下移动画 */
+.animate.animate-down.animate-down-none {
+    opacity: 0;
+    transform:translate(0px,-80px);
+}
+.animate.animate-down.animate-down-show {
+    opacity: 1;
+    transform:translate(0px,0px);
+    transition:all 1s;
+}
+/* //二级页内容动画左移动画 */
+.animate.animate-left.animate-left-none {
+    opacity: 0;
+    transform:translate(50px,0px);
+}
+.animate.animate-left.animate-left-show {
+    opacity: 1;
+    transform:translate(0px,0px);
+    transition:all 1s;
+}
+/* //二级页内容动画右移动画 */
+.animate.animate-right.animate-right-none {
+    opacity: 0;
+    transform:translate(-50px,0px);
+}
+.animate.animate-right.animate-right-show {
+    opacity: 1;
+    transform:translate(0px,0px);
+    transition:all 1s;
+}

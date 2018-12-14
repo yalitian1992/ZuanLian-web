@@ -1,0 +1,11 @@
+.login {
+	position: fixed;
+    top: .21rem;
+    right: .21rem;
+    z-index: 999;
+    font-size: .22rem;
+}
+.swiper-slide-1 .content > p {
+    font-size: 0.24rem;
+    padding: 0;
+}

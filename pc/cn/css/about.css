@@ -1,0 +1,882 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background: #EDF2F7;
+}
+.box {
+	height: 100%;
+	margin : 0 50px;
+}
+.box .content {
+	width: 100%;
+	height: 100%;
+}
+#about {
+	width: 100%;
+    overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+#about h3 {
+
+}
+#about h5 {
+
+}
+#about h6 {
+	color: #2D2B51;
+}
+
+#about .banner {
+	
+    min-width: 1200px;
+	padding-top: 115px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 165px;
+}
+
+#about .banner img {
+	width: 99%;
+	margin-right: 50px;
+
+}
+#about .banner .banner-out {
+	position: relative;
+}
+#about .banner .banner-in {
+position: absolute;
+    top: 142px;
+    left: 50px;
+    width: 97.6%;
+    max-width: 1770px;
+    height: 100%;
+    background: #23ABEA;
+    z-index: -1;
+}
+#about .banner .banner-in .text	{
+	width: 100%;
+	position: absolute;
+	bottom: 40px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+#about .banner .banner-in .text p {
+    color: #fff;
+    text-align: left;
+    width: 850px;
+    margin: 0 auto;
+}
+#about .banner .bannerdiamonds {
+
+}
+#about .banner .bannerdiamonds span {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+}
+#about .banner .bannerdiamonds span:nth-child(1) {
+	background-image: url(../../public/images/about/diamond-5.png);
+    left: 17%;
+    bottom: 20%;
+
+}
+#about .banner .bannerdiamonds span:nth-child(2) {
+	background-image: url(../../public/images/about/diamond-6.png);
+left: 73%;
+    bottom: 48%;
+}
+#about .banner .bannerdiamonds span:nth-child(3) {
+	background-image: url(../../public/images/about/diamond-7.png);
+    left: 54%;
+    bottom: 20%;
+}
+
+#about .main-content {
+	padding-top: 50px;
+
+}
+#about .main-content .text{
+	float: left;
+	width: 50%;
+}
+#about .main-content .photo {
+	float: left;
+	width: 50%;
+}
+#about .box-two {
+	min-width: 1200px;
+	padding-top: 60px;
+	margin: 0 auto;
+}
+#about .box-two .left{
+    width: 50%;
+    min-width: 500px;
+    float: left;
+    padding-top: 150px;
+}
+#about .box-two .left h5 {
+	font-size: 45px;
+	padding-bottom: 50px;
+	position: relative;
+	color: #2D2B51;
+	font-weight: 600;
+}
+#about .box-two .left h5:before {
+content: "";
+    width: 66px;
+    height: 59px;
+    top: -60px;
+    left: 4px;
+    display: block;
+    position: absolute;
+    background-image: url(../../public/images/about/logo.png);
+}
+#about .box-two .left h5:after {
+    content: "";
+    width: 95px;
+    height: 6px;
+    top: 77px;
+    left: 4px;
+    display: block;
+    position: absolute;
+    background: #2D2B51;
+}
+#about .box-two .left h6 {
+	font-size: 25px;
+	color: #2D2B51;
+	padding-bottom: 5px;
+}
+#about .box-two .left p {
+	font-size: 14px;
+	color: #707186;
+	line-height: 28px;
+}
+#about .box-two .left p a {
+	color: #23ABEA;
+}
+
+#about .box-two .right{
+    width: 50%;
+    min-width: 500px;
+    float: left;
+}
+#about .box-two .left .text {
+    width: 440px;
+    margin-left: 150px;
+}
+#about .box-two .right .photo {
+	position: relative;
+	width: 577px;
+	height: 590px;
+	margin-left: 5%;
+}
+#about .box-two .right .photo-bgc {
+    position: absolute;
+    top: 67px;
+    left: 240px;
+    z-index: -1;
+}
+#about .box-two .right .photo-bgc:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 107px;
+    top: 122px;
+    right: -23px;
+    background-image: url(../../public/images/about/diamond-1.png);
+}
+
+/* ========投资人开始======= */
+.shadow_box{
+    width: 2500px;
+    height: 2500px;
+    background:rgba(00,17,25,0.85);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1995;
+    display: none;
+}
+
+.investor{
+    margin-top: 140px;
+    max-width: 1200px;
+     /*height:2000px;*/
+    position: relative;
+    overflow: hidden;
+    margin: 90px auto;
+        margin-bottom: 0;
+}
+#about .investor h5 {
+    font-size: 45px;
+    padding-bottom: 50px;
+    position: relative;
+    color: #2D2B51;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 150px;
+    width: 160px;
+    margin: 0 auto;
+}
+#about .investor h5:before {
+    content: "";
+    width: 66px;
+    height: 59px;
+    top: -60px;
+    right: 50%;
+    display: block;
+    position: absolute;
+}
+#about .investor h5:after {
+content: "";
+    width: 95px;
+    height: 6px;
+    top: 77px;
+    left: 12px;
+    display: block;
+    position: absolute;
+    background: #2D2B51;
+}
+#about .investor ul{
+	width: 1180px;
+	height: 500px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	margin-top:-73px; 
+}
+#about .investor li h4{
+    font-weight:600;
+    position: relative;
+}
+#about .investor li h4 span{
+    width: 20px;
+    height: 20px;
+    background:url("../../public/images/about/on_ipput.png")no-repeat;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#about .investor li h4 span:hover{
+    background:url("../../public/images/about/on_ipput_hover.png")no-repeat;
+}
+#about .investor li{
+    padding: 0 30px;
+    width: 330px;
+    height:570px;
+    float: left;
+    position: relative;
+}
+#about .investor li:nth-child(7){
+    margin-left: 198px;
+}
+#about .investor li:nth-child(8){
+
+}
+#about .investor li .doc{
+    width:316px;
+	position: absolute;
+	top:340px;
+    left: 50%;
+    margin-left: -148px;
+}
+#about .investor li .doc p{
+    width: 100%;
+    color: #2c3e55;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+#about .investor li .doc p h4{
+    width:100%;
+}
+#about .investor li .hide_box{
+    display: none;
+}
+#about .investor .show_box{
+    width:936px;
+    height:500px;
+    position: fixed;
+    top:-9%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    z-index: 2000;
+    background-color:#C1D6F1;
+}
+#about .investor .show_box .doc_show{
+    width:816px;
+    height:380px;
+    background-color:white;
+    position: absolute;
+    padding:60px;
+    top:60px;
+    left: -60px;
+    box-shadow: 10px 10px 10px -4px rgba(0,0,0,0.1);
+}
+#about .investor .show_box .close{
+    width: 19px;
+    height: 19px;
+    background:url("../../public/images/about/close.png") no-repeat;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    right: 20px;
+    top:20px;
+}
+#about .investor .show_box .left_img{
+    width: 208px;
+    height: 208px;
+    float: left;
+}
+#about .investor .show_box .right_doc{
+    width: 568px;
+    float: right;
+}
+#about .investor .show_box .right_doc h4{
+    color:#2c3e55;
+    font-size: 24px;
+    font-weight:600;
+}
+/*字号14px 颜色2c3e55*/
+#about .investor .show_box .right_doc p{
+     font-size: 14px;
+     color:#2c3e55;
+     margin-top: 20px;
+    line-height: 20px;
+ }
+#about .investor .diamond1{
+    width: 79px;
+    height: 69px;
+    background:url("../../public/images/about/demo1.png") no-repeat;
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 20%;
+}
+#about .investor .diamond2{
+    width: 160px;
+    height: 160px;
+    background:url("../../public/images/about/demo2.png") no-repeat;
+    position: absolute;
+    display: block;
+    bottom: 20%;
+    right:6%;
+}
+
+
+/*------end----*/
+
+
+
+
+
+
+#about .box-one .team {
+	position: relative;
+	height: 1160px;
+	background-image: url(../../public/images/about/xian.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 80px;
+}
+#about .box-one .team h5 {
+	font-size: 45px;
+	/* width: 600px; */
+	padding-bottom: 50px;
+	position: relative;
+	color: #2D2B51;
+	font-weight: 600;
+	text-align: right;
+	padding-right: 350px;
+	padding-bottom: 100px;
+}
+#about .box-one .team h5:before {
+content: "";
+    width: 66px;
+    height: 59px;
+    top: -60px;
+    right: 350px;
+    display: block;
+    position: absolute;
+    background-image: url(../../public/images/about/manage.png);
+}
+#about .team h5:after {
+    content: "";
+    width: 95px;
+    height: 6px;
+    top: 77px;
+    right: 354px;
+    display: block;
+    position: absolute;
+    background: #2D2B51;
+}
+#about .box-one .team ul{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+
+}
+#about .box-one .team li {
+	width: 317px;
+	height: 325px;
+	position: absolute;
+}
+#about .box-one .team li.li1 {
+    top: -10px;
+    left: -332px;
+	background: url(../../public/images/about/zhang.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 5;
+	
+}
+#about .box-one .team li.li2 {
+    top: -124px;
+    left: -148px;
+	background: url(../../public/images/about/kong.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 4;
+	
+}
+#about .box-one .team li.li3 {
+top: -52px;
+    left: 79px;
+	background: url(../../public/images/about/jie.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 3;
+}
+#about .box-one .team li.li4 {
+    top: -124px;
+    left: 307px;
+	background: url(../../public/images/about/pu.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 2;
+	
+}
+#about .box-one .team li.li5 {
+    top: -10px;
+    left: 492px;
+	background: url(../../public/images/about/qiu.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+	
+}
+
+/* 人物描述 */
+
+#about .box-one .team li.dsc.dsc-show {
+	transition: all 1s;
+	/* display: block; */
+	opacity: 1; 
+}
+
+#about .box-one .team li.dsc {
+    position: absolute;
+    width: 481px;
+    height: 481px;
+        left: 10px;
+    top: 228px;
+    opacity: 0;
+    transition: all 1s;
+    /* display: none; */
+    z-index: 50;
+}
+
+#about .box-one .team .hover {
+	display: block;
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    background: #000;
+    z-index: 999;
+    transform: rotate(-45deg);
+    opacity: 0;
+	transition: all 1s;
+}
+#about .box-one .team .hover.zhezhao {
+	opacity: 0.8;
+	transition: all 1s;
+}
+#about .box-one .team .hover1 {
+    top: 35px;
+    left: -289px;
+}
+#about .box-one .team .hover2 {
+    top: -79px;
+    left: -102px;
+}
+#about .box-one .team .hover3 {
+    top: -7px;
+    left: 123px;
+}
+#about .box-one .team .hover4 {
+    top: -78px;
+    left: 351px;
+}
+#about .box-one .team .hover5 {
+    top: 35px;
+    left: 537px;
+}
+
+#about .box-one .team li.dsc1 {
+	background-image: url(../images/about/zhang-dsc.png);
+	background-repeat: no-repeat;
+}
+#about .box-one .team li.dsc2 {
+	background-image: url(../images/about/kong-dsc.png);
+	background-repeat: no-repeat;
+}
+#about .box-one .team li.dsc3 {
+	background-image: url(../images/about/yu-dsc.png);
+	background-repeat: no-repeat;
+}
+#about .box-one .team li.dsc4 {
+	background-image: url(../images/about/pu-dsc.png);
+	background-repeat: no-repeat;
+}
+#about .box-one .team li.dsc5 {
+	background-image: url(../images/about/qiu-dsc.png);
+	background-repeat: no-repeat;
+}
+
+/* 人物标签 */
+
+#about .box-one .team li .biaoqian.biaoqian-hidden {
+	opacity: 0;
+	transition: all 1s;
+}
+#about .box-one .team li.li1 .biaoqian {
+	position: absolute;
+    top: 252px;
+    left: 178px;
+	width: 145px;
+	height: 56px;
+	background-image: url(../images/about/zhang-biaoqian.png);
+	background-repeat: no-repeat;
+	transition: all 1s;
+}
+#about .box-one .team li.li2 .biaoqian {
+	position: absolute;
+	top: 1px;
+    left: 189px;
+	width: 163px;
+	height: 40px;
+	background-image: url(../images/about/kong-biaoqian.png);
+	background-repeat: no-repeat;
+}
+#about .box-one .team li.li3 .biaoqian {
+	position: absolute;
+    top: 260px;
+    left: 188px;
+	width: 111px;
+	height: 40px;
+	background-image: url(../images/about/yu-biaoqian.png);
+	background-repeat: no-repeat;
+}
+#about .box-one .team li.li4 .biaoqian {
+	position: absolute;
+    top: 0;
+    left: 186px;
+	width: 132px;
+	height: 40px;
+	background-image: url(../images/about/pu-biaoqian.png);
+	background-repeat: no-repeat;
+}
+#about .box-one .team li.li5 .biaoqian {
+	position: absolute;
+    top: 255px;
+    left: 192px;
+	width: 112px;
+	height: 40px;
+	background-image: url(../images/about/qiu-biaoqian.png);
+	background-repeat: no-repeat;
+}
+
+/* 小钻石 */
+#about .box-one .team li.diamond1 {
+position: absolute;
+    display: block;
+    width: 80px;
+    height: 85px;
+    top: -50%;
+    left: -124px;
+    background: url(../../public/images/about/diamond-2.png);
+    z-index: 99;
+}
+#about .box-one .team li.diamond2 {
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 160px;
+    top: 464px;
+    left: -75px;
+    background: url(../../public/images/about/diamond-3.png);
+    z-index: 99;
+}
+#about .box-one .team li.diamond3 {
+    position: absolute;
+    display: block;
+    width: 65px;
+    height: 70px;
+    top: 600px;
+    left: 583px;
+    background: url(../../public/images/about/diamond-4.png);
+    z-index: 99;
+}
+
+/* 策略 */
+
+.celue {
+    padding: 70px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 90px;
+    position: relative;
+    z-index: 333;
+}
+.celue h6 {
+    color: #2D2B51;
+}
+.celue h5 {
+    margin-bottom: 52px;
+}
+
+.celue h5:before {
+
+    content: "";
+    width: 95px;
+    height: 6px;
+    top: 77px;
+    left: 4px;
+    display: block;
+    position: absolute;
+    background: #2D2B51;
+}
+.celue p {
+        width: 100%;
+    color: #2c3e55;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+.celue .min-tit span{
+    width: 20px;
+    height: 20px;
+    background:url("../../public/images/about/on_ipput.png")no-repeat;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.celue .min-tit span:hover{
+    background:url("../../public/images/about/on_ipput_hover.png")no-repeat;
+}
+.celue .content-box {
+padding: 0px 82px;
+}
+.celue .content-box .text {
+    width: 458px;
+    float: left;
+}
+.celue .content-box .img {
+    width: 551px;
+    height: 332px;
+    background-image: url(../../public/images/about/chensongguang.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+    position: relative;
+}
+.celue .content-box .img:after {
+    content: "";
+    width: 115px;
+    height: 140px;
+    background-image: url(../../public/images/about/min-diamonds-celue.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 227px;
+    left: 344px;
+}
+
+
+
+
+/* 顾问 */
+
+.guwen {
+    padding-top: 50px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 500px;
+}
+.guwen h5 {
+    margin-bottom: 52px;
+}
+
+.guwen h5:before {
+
+    content: "";
+    width: 95px;
+    height: 6px;
+    top: 77px;
+    left: 4px;
+    display: block;
+    position: absolute;
+    background: #2D2B51;
+}
+.guwen h6 {
+    color: #2D2B51;
+}
+.guwen p {
+        width: 100%;
+    color: #2c3e55;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+.guwen .min-tit span{
+    width: 20px;
+    height: 20px;
+    background:url("../../public/images/about/on_ipput.png")no-repeat;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.guwen .min-tit span:hover{
+    background:url("../../public/images/about/on_ipput_hover.png")no-repeat;
+}
+.guwen .content-box {
+    padding: 0 120px;
+}
+.guwen .content-box .text {
+    width: 458px;
+    float: right;
+}
+.guwen .content-box .img {
+    width: 434px;
+    height: 332px;
+    background-image: url(../../public/images/about/qitele.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    position: relative;
+}
+.guwen .content-box .img:after {
+    content: "";
+    width: 98px;
+    height: 106px;
+    background-image: url(../../public/images/about/min-diamonds-guwen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 243px;
+    left: 26px;
+}
+
+
+
+
+.pop-pop .pop-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(00,17,25,0.85);
+    display: none;
+    z-index: 334;
+    top: 0;
+    left: 0;
+}
+.pop-pop .pop-box .big-pop {
+    width: 1000px;
+    height: 560px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /* background-color: red; */
+}
+.pop-pop .pop-box .in-box {
+    width: 940px;
+    height: 520px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: #C1D6F1;
+}
+.pop-pop .pop-box .out-box {
+    width: 940px;
+    height: 520px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #fff;
+        box-shadow: 10px 10px 10px -4px rgba(0,0,0,0.1);
+}
+.pop-pop .pop-box .close-btn {
+    width: 19px;
+    height: 19px;
+    background-image: url(../../public/images/about/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.pop-pop .pop-box .out-box .pic-txt {
+    padding: 60px;
+}
+.pop-pop .pop-box .out-box .pic-txt .pic {
+    float: left;
+    width: 208px;
+}
+.pop-pop .pop-box .out-box .pic-txt .txt {
+    float: right;
+    width: 570px;
+}
+.pop-pop .pop-box .out-box .pic-txt .txt h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.pop-pop .pop-box .out-box .pic-txt .txt p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+}

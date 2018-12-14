@@ -1,0 +1,435 @@
+body {
+    background: #EAF2FC;
+}
+
+
+/* banner部分 */
+.banner {
+    width: 7.5rem;
+    height: 4.8rem;
+    background-image: url(../../public/images/bc/about@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner .title {
+    position: absolute;
+    width: 6.8rem;
+    height: 1.76rem;
+    background-image: url(../images/about/title@3x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 3.56rem;
+    left: .6rem;
+}
+
+/* 主题内容 */
+.pub-box {
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+.pub-box p {
+    font-size: .22rem;
+    line-height: .33rem;
+    text-indent: 2em;
+}
+.pub-box p a {
+    color: #23ABEA;
+}
+.pub-box .abstract {
+    padding-top: 1rem;
+    color: #8f9bab;
+}
+.pub-box.boss .abstract {
+    padding-top: .5rem;
+}
+.pub-box.boss .abstract h5 {
+    font-size: .36rem;
+    line-height: .36rem;
+    text-align: center;
+    padding-bottom: .20rem;
+    
+        color: #2c3e55;
+
+
+}
+.pub-box.boss .abstract h6 {
+    font-size: .24rem;
+    line-height: .24rem;
+    padding-bottom: .30rem;
+    text-align: center;
+        color: #2c3e55;
+}
+
+.pub-box .main-contain {
+    color: #8f9bab;
+}
+.pub-box .main-contain .title {
+    padding-top: .6rem;
+    text-align: center;
+}
+.pub-box .main-contain .title h3  {
+    font-size: .36rem;
+    line-height: .54rem;
+    color: #1876F4;
+    
+}
+
+.pub-box .main-contain .img {
+    position: relative;
+    height: 5.89rem;
+    margin-top: .6rem;
+}
+.pub-box .main-contain .img .inimg {
+position: absolute;
+    width: 5.88rem;
+    height: 5.89rem;
+    background-image: url(../../public/images/about/boss-142@3x.png);
+    background-size: 4.25rem 4.25rem;
+    background-repeat: no-repeat;
+    background-position: 100% 42%;
+    z-index: 1;
+    right: 0rem;
+
+
+}
+.pub-box .main-contain .img .outimg {
+    position: absolute;
+    z-index: 2;
+    width: 5.88rem;
+    height: 5.89rem;
+    background-image: url(../../public/images/about/z-1@3x.png);
+    background-size: 5.88rem 5.89rem;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.pub-box .investor h3 {
+    padding-bottom: .6rem;
+}
+.pub-box .investor ul li {
+    width: 100%;
+}
+.pub-box .investor ul li .box {
+    width: 50%;
+    float: left;
+    padding-bottom: .6rem;
+    position: relative;
+}
+.pub-box .investor ul li .box .img {
+    width: 3.39rem;
+    height: 3.49rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 3;
+}
+
+.pub-box .investor ul li .box .bgc {
+    width: 3.11rem;
+    height: 3.13rem;
+    position: absolute;
+    background-image: url(../../public/images/about/team-bgc3x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pub-box .investor ul li:nth-child(2n+1) .box .bgc {
+left: -8%;
+    top: 1%;
+}
+.pub-box .investor ul li:nth-child(2n) .box .bgc {
+right: -8%;
+    top: 1%;
+}
+
+
+.pub-box .investor ul li:nth-child(2n+1) .box .text {
+    padding-left: .3rem;
+}
+.pub-box .investor ul li:nth-child(2n) .box .text {
+    padding-right: .3rem;
+}
+
+
+.pub-box .investor ul li .box .text h5 {
+    font-size: .3rem;
+    line-height: .3rem;
+    color: #2c3e55;
+    font-weight: 800;
+    padding-bottom: .2rem;
+}
+.pub-box .investor ul li .box .text h6 {
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #2c3e55;
+    padding-bottom: .3rem;
+}
+
+.pub-box .investor ul li .box .text p {
+    font-size: .22rem;
+    color: #8f9bab;
+    text-indent: 0;
+}
+
+
+
+.pub-box .investor ul li:nth-child(1) .img{
+    background-image: url(../../public/images/about/touziren/Zhang-Zhen.png);
+}
+.pub-box .investor ul li:nth-child(2) .img{
+    background-image: url(../../public/images/about/touziren/Sun-Tongyu.png);
+}
+.pub-box .investor ul li:nth-child(3) .img{
+    background-image: url(../../public/images/about/touziren/He-haojie.png);
+}
+.pub-box .investor ul li:nth-child(4) .img{
+    background-image: url(../../public/images/about/touziren/Cai-Wensheng.png);
+}
+.pub-box .investor ul li:nth-child(5) .img{
+    background-image: url(../../public/images/about/touziren/Zhou-Quan.png);
+}
+.pub-box .investor ul li:nth-child(6) .img{
+    background-image: url(../../public/images/about/touziren/Mi-Qun.png);
+}
+.pub-box .investor ul li:nth-child(7) .img{
+    background-image: url(../../public/images/about/touziren/Luo-Wenqian.png);
+}
+.pub-box .investor ul li:nth-child(8) .img{
+    background-image: url(../../public/images/about/touziren/yuanfengli.png);
+}
+
+
+.pub-box .team h3 {
+    padding-bottom: .6rem;
+}
+.pub-box .team ul li {
+    width: 100%;
+}
+.pub-box .team ul li .box {
+    width: 50%;
+    float: left;
+    padding-bottom: .6rem;
+    position: relative;
+}
+.pub-box .team ul li .box .img {
+    width: 3.39rem;
+    height: 3.49rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 3;
+}
+
+.pub-box .team ul li .box .bgc {
+    width: 3.11rem;
+    height: 3.13rem;
+    position: absolute;
+    background-image: url(../../public/images/about/team-bgc3x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pub-box .team ul li:nth-child(2n+1) .box .bgc {
+left: -8%;
+    top: 1%;
+}
+.pub-box .team ul li:nth-child(2n) .box .bgc {
+right: -8%;
+    top: 1%;
+}
+
+
+.pub-box .team ul li:nth-child(2n+1) .box .text {
+    padding-left: .3rem;
+}
+.pub-box .team ul li:nth-child(2n) .box .text {
+    padding-right: .3rem;
+}
+
+
+.pub-box .team ul li .box .text h5 {
+    font-size: .3rem;
+    line-height: .3rem;
+    color: #2c3e55;
+    font-weight: 800;
+    padding-bottom: .2rem;
+}
+.pub-box .team ul li .box .text h6 {
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #2c3e55;
+    padding-bottom: .3rem;
+}
+
+.pub-box .team ul li .box .text p {
+    font-size: .22rem;
+    color: #8f9bab;
+    text-indent: 0;
+}
+
+
+
+.pub-box .team ul li:nth-child(1) .img{
+    background-image: url(../../public/images/about/yu3x.png);
+}
+.pub-box .team ul li:nth-child(2) .img{
+    background-image: url(../../public/images/about/kong3x.png);
+}
+
+.pub-box .team ul li:nth-child(3) .img{
+    background-image: url(../../public/images/about/pu3x.png);
+}
+
+.pub-box .team ul li:nth-child(4) .img{
+    background-image: url(../../public/images/about/zhang3x.png);
+}
+
+.pub-box .team ul li:nth-child(5) .img{
+    background-image: url(../../public/images/about/qiu3x.png);
+}
+
+.celue {
+    padding: 0 .3rem;
+    padding-bottom: .5rem;
+}
+.celue img {
+    display: block;
+    margin: 0 auto;
+}
+.celue .text {
+    padding-top: .34rem;
+}
+.celue h5 {
+    font-size: .36rem;
+    line-height: .36rem;
+    text-align: center;
+    padding-bottom: .20rem;
+        color: #2c3e55;
+}
+.celue h6 {
+    font-size: .24rem;
+    line-height: .24rem;
+    padding-bottom: .30rem;
+    text-align: center;
+        color: #2c3e55;
+}
+.celue p {
+    font-size: .22rem;
+    color: #8f9bab;
+    text-indent: 0;
+}
+
+.guwen {
+    padding: 0 .3rem;
+    padding-bottom: .5rem;
+}
+.guwen img {
+    display: block;
+    margin: 0 auto;
+}
+.guwen .text {
+    padding-top: .34rem;
+}
+.guwen h5 {
+    font-size: .36rem;
+    line-height: .36rem;
+    text-align: center;
+    padding-bottom: .20rem;
+        color: #2c3e55;
+}
+.guwen h6 {
+    font-size: .24rem;
+    line-height: .24rem;
+    padding-bottom: .30rem;
+    text-align: center;
+        color: #2c3e55;
+}
+.guwen p {
+    font-size: .22rem;
+    color: #8f9bab;
+    text-indent: 0;
+}
+
+
+
+.pop-detail {
+    overflow: hidden;
+}
+.pop-detail p.detail-btn {
+    color: #1876F4 !important;
+    position: relative;
+    width: 1.2rem;
+}
+.pop-detail p.detail-btn:after {
+content: "";
+    position: absolute;
+    display: block;
+    width: .19rem;
+    height: .19rem;
+    background-image: url(../../public/images/lanjiantou.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: .07rem;
+    right: 0;
+}
+.pop-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(00,17,25,0.65);
+    display: none;
+    z-index: 334;
+    top: 0;
+    left: 0;
+}
+.pop-box .big-pop {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+}
+.pop-box .close-btn {
+    width: .30rem;
+    height: .30rem;
+    background-image: url(../../public/images/about/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.pop-box .pic-txt {
+    padding: 60px;
+}
+.pop-box .pic-txt .pic {
+    width: 2rem;
+    margin: 0 auto;
+    padding-bottom: .3rem;
+}
+.pop-box .pic-txt .txt {
+    margin: 0 auto;
+}
+.pop-box .pic-txt .txt h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.pop-box .pic-txt .txt p {
+    font-size: .22rem;
+    line-height: .33rem;
+    color: #8f9bab;
+    text-indent: 0;
+}

@@ -1,0 +1,65 @@
+/*CSS初始化*/
+html {
+    font-size: calc(100vw/7.5);
+}
+
+body, h1, h2, h3, h4, h5, h6, p, div, ul, ol, dl, dt, dd, li, video {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+i, s {
+
+    font-style: normal;
+    text-decoration: none;
+}
+
+input, img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+button {
+    border-style: none;
+    background-color: #fff;
+    text-align: center;
+}

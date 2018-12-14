@@ -1,0 +1,95 @@
+body,p,div,ul,li,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding: 0;
+}
+input,img button{
+    margin:0;
+    padding:0;
+    border: 0 none;
+    outline-style: none;
+}
+html{
+    width:100%;
+    height: 100%;
+}
+body{
+    width:100%;
+    height: 100%;
+    background:url("../images/bg-01.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+#login{
+    height: 68px;
+    min-width: 320px;
+    max-width: 430px;
+    width: 80%;
+    background: rgba(255,255,255,0.85);
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    border-radius: 6px;
+}
+#pwd{
+    width: 100%;
+    height: 68px;
+    text-indent: 62px;
+    border-radius: 6px;
+    font-size:22px;
+    color:#1876f4;
+    background-color:transparent;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #6b9bf0;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #6b9bf0;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #6b9bf0;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #6b9bf0;
+}
+#login i{
+    width: 26px;
+    height: 26px;
+    background:url("../images/lock.png") no-repeat;
+    position: absolute;
+    left: 20px;
+    top: 36%;
+}
+#login p:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+#login p:nth-child(2) i{
+    width: 28px;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    background:url("../images/go.png") no-repeat;
+}
+#submit{
+    background-color:transparent;
+    width:  68px;
+    height: 68px;
+    border: 0 none;
+    outline-style: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all .2s linear;
+   transform:scale(0.9);
+}
+#login:hover #submit{
+    transform:scale(1);
+}

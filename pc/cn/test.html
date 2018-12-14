@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Highstock Example</title>
+
+  <script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+
+  <!-- <script src="https://code.highcharts.com/stock/highstock.js"></script> -->
+  <script src="../highstock.js"></script>
+  <!-- <script src="https://code.highcharts.com/stock/modules/exporting.js"></script> -->
+
+
+  <style type="text/css">
+    ${demo.css}
+    #container {
+      position: relative;
+    }
+    #container .test {
+      height: 200px;
+      position: absolute;
+    }
+  </style>
+  <script type="text/javascript">
+
+
+
+
+
+
+    $(function(){
+
+
+
+      //模拟当日数据
+      var demoData = dataTestOut();
+      console.log(demoData)
+      console.log(demoData[demoData.length-1][0])
+
+      // 生成模拟数据函数
+      function dataTestOut(){
+        var dataTest = [];
+        var dataBranch1 = [];
+
+        var a = 300;
+        var b = 28800000;
+        var c = 300
+        for(var i=0;i<720;i++){
+
+
+          if (i<=400){
+            b = b + 60000;
+            var randomNum = Math.random();
+            dataBranch1.push( b )
+            dataBranch1.push( a + Math.random() - Math.random() )
+            // dataBranch1.push( a + Math.random() - Math.random() )
+            // dataBranch1.push( a + Math.random() - Math.random() )
+            // dataBranch1.push( a + Math.random() - Math.random() )
+            // dataBranch1.push( ( a + Math.random() - a ) / 300 )
+          }else {
+            b = b + 60000;
+            var randomNum = Math.random();
+            dataBranch1.push( b )
+            dataBranch1.push( null )
+            // dataBranch1.push( '' )
+            // dataBranch1.push( a + Math.random() - Math.random() )
+            // dataBranch1.push( a + Math.random() - Math.random() )
+            // dataBranch1.push( a + Math.random() - Math.random() )
+            // dataBranch1.push( ( a + Math.random() - a ) / 300 )
+          }
+          dataTest.push(dataBranch1)
+          dataBranch1 = [];
+        }
+        console.log(dataTest)
+
+        return dataTest
+      }
+
+
+
+
+
+
+      var mychart = Highcharts.stockChart({
+        // chart : {
+        //   events : {
+        //     load : function () {
+        //       // set up the updating of the chart each second
+        //       var series = this.series[0];
+        //       setInterval(function () {
+        //         // var x = demoData[demoData.length-1][0] + 60000;
+        //         var x = demoData[300][0] + 60000;
+        //         y = Math.random() - Math.random() + 300;
+        //         series.addPoint([x, y], true, true);
+        //       }, 1000);
+        //     }
+        //   }
+        // },
+        chart : {
+          renderTo : "container",
+          events : {
+            load : function () {
+              // set up the updating of the chart each second
+              var series = this.series[0];
+
+              var idx = 400;
+              setInterval(function () {
+                // var x = demoData[demoData.length-1][0] + 60000;
+                var x = demoData[idx-1][0] + 60000;
+                y = Math.random() - Math.random() + 300;
+                console.log(+x + "---" + "" +y)
+                series.addPoint([x, y], true, false);
+                idx++;
+                console.log(mychart)
+                mychart.redraw();
+              }, 1000);
+            }
+          }
+        },
+        rangeSelector: {
+          enabled: false  //隐藏左上角范围选择器
+        },
+        scrollbar: {
+          enabled: false  //隐藏滚动条
+        },
+        navigation: {
+          buttonOptions: {
+            enabled: false  //隐藏顶部导航条
+          }
+        },
+        navigator:{
+          enabled:false    //隐藏底部范围选择
+        },
+        credits: {
+          enabled: false //隐藏highchart.com字样
+        },
+        xAxis: {
+          crosshair:{     //鼠标经过出现十字线
+            dashStyle: 'dash',   //十字线样式
+            color: '#999',      //十字线颜色
+            label:{
+              enabled: true,
+              padding:8,
+              formatter:function(e){
+                return  Highcharts.dateFormat("%H:%M", e);;
+              },
+              borderWidth:1,
+              backgroundColor:"#999",
+              style:{"color":"#fff"}
+            }
+          },
+          type: 'datetime',
+          labels: {
+            formatter: function () {
+              // console.log(this.value)
+              return  Highcharts.dateFormat("%H:%M", this.value);
+            },
+            step: 1
+          }
+
+        },
+        yAxis: [{
+          title: {
+            text: '' // 左侧y轴名字
+          },
+          tickInterval: 3,  //刻度比例
+          max:310,  // 定义Y轴 最大值
+          min:292,  // 定义最小值
+          crosshair:{     //鼠标经过出现十字线
+            dashStyle: 'dash',   //十字线样式
+            color: '#999',      //十字线颜色
+            label:{
+              enabled: true,
+              padding:8,
+              formatter:function(e){
+                // return e.toFixed(2);
+                console.log(2)
+                // return '<span style="color: #fff;float:right">' + e.toFixed(2) + '</span>'
+
+                if(e > 300) {
+                  return '<span style="color: red;float:right">' + e.toFixed(2) + '</span>' + '  ' + '<span style="color:red;">' + (Math.floor( (e-300)/e * 1000) / 100).toFixed(2) + '% </span>'
+                }else if(e < 300) {
+                  return '<span style="color: green;float:right">' + e.toFixed(2) + '</span>' + '  ' + '<span style="color:green;">' + (Math.floor( (e-300)/e * 1000) / 100).toFixed(2) + '% </span>'
+                }else if(e = 300) {
+                  return '<span style="color: #fff;float:right">' + e.toFixed(2) + '</span>' + '  ' + '<span style="color:#fff;">' + (Math.floor( (e-300)/e * 1000) / 100).toFixed(2) + '% </span>'
+                }
+              },
+              borderWidth:1,
+              backgroundColor:"#999", // 背景色
+              style:{"color":"#fff"}  //字体颜色
+            }
+          },
+          opposite: false,
+          labels: {
+            formatter: function () {
+              var a = ( this.value - 300 ) / this.value
+              //    return (this.value > 0 ? '' : '') + Math.floor(a * 1000) / 100 + '%';
+              // return (this.value > 0 ? ' + ' : '') + ( this.value - 300 ) / this.value + '%';
+              //
+
+              if(this.value > 300) {
+                return '<span style="color: red">' + this.value + '</span>';
+              }else if(this.value < 300) {
+                return '<span style="color: green">' + this.value + '</span>';
+              }else if(this.value = 300) {
+                return '<span style="color: gray">' + this.value + '</span>';
+              }
+
+
+              // return (this.value > 0 ? ' <span style="color: red"> + ' : '<span style="color: green">') + this.value + '% </span>';
+            }
+          },
+
+        }, {
+          title: {
+            text: ''    //右侧Y轴名字
+          },
+          // data:demoData,
+          opposite: true,
+          gridLineWidth: 0,
+          tickInterval: 3,  //刻度比例
+          max:310,  // 定义Y轴 最大值
+          min:292,  // 定义最小值
+          // tickPositions: [260, 280, 300, 320,340,360],
+          crosshair:{     //鼠标经过出现十字线
+            dashStyle: 'dash',   //十字线样式
+            color: '#999',      //十字线颜色
+            label:{
+              enabled: true,
+              padding:8,
+              formatter: function(e){
+                // return e.toFixed(2);
+                console.log(3)
+                return '<span style="color: #fff;float:right">' + e.toFixed(2) + '</span>' + '<br>' + '<span>' + e + '</span>'
+              },
+              borderWidth:1,
+              backgroundColor:"#999", // 背景色
+              style:{"color":"#fff"}  //字体颜色
+            }
+          },
+          labels: {
+            formatter: function () {
+              var a = ( this.value - 300 ) / this.value
+              //    return (this.value > 0 ? '' : '') + Math.floor(a * 1000) / 100 + '%';
+              // return (this.value > 0 ? ' + ' : '') + ( this.value - 300 ) / this.value + '%';
+              //
+
+              if(this.value > 300) {
+                return '<span style="color: red">' + (Math.floor(a * 1000) / 100).toFixed(2)  + '% </span>';
+              }else if(this.value < 300) {
+                return '<span style="color: green">' + (Math.floor(a * 1000) / 100).toFixed(2) + '% </span>';
+              }else if(this.value = 300) {
+                return '<span style="color: gray">' + (Math.floor(a * 1000) / 100).toFixed(2) + '% </span>';
+              }
+
+
+              // return (this.value > 0 ? ' <span style="color: red"> + ' : '<span style="color: green">') + this.value + '% </span>';
+            }
+
+          }
+        }],
+
+        series: [{
+          name: 'GOOGL',
+          data: demoData,
+          yAxis: 0,
+          marker: {
+            radius:0
+          }
+        }],
+        //显示鼠标所在点的时间和值
+
+        /*tooltip: {    //提示框上边一行显示
+         // crosshairs: [
+         //   { color: "#ffcbcc" },    //已废弃
+         //   { color: "#ffcbcc" }
+         // ],
+         positioner: function () {
+         return { x: 50, y: 0 }    //提示框的位置
+         },
+         shared: true,
+         useHTML: true,
+         shadow: false,
+         borderColor: "rgba(255, 255, 255, 0)",
+         backgroundColor: "rgba(255, 255, 255, 0)",
+         valueDecimals: 2,
+         formatter: function () {
+         var e, t, z ,o = this;
+         return $.each(this.points, function () {
+         var n = this.point.index;
+         // e = Highcharts.dateFormat("20%y-%m-%d %H:%M", this.x),
+         //   t = "当前价:" + Highcharts.numberFormat(o.y,2),
+         //   z = "成交价：" + Highcharts.numberFormat(o.y,3)
+
+         e = Highcharts.dateFormat("%H:%M", this.x),
+         t = "当前价:" + Highcharts.numberFormat(o.y,2),
+         z = "成交价：" + Highcharts.numberFormat(o.y,3)
+         }),
+         "时间："+e + "  " + t + " " + z
+         }
+         }*/
+        //显示鼠标所在点的时间和值
+        tooltip: {
+          // crosshairs: [
+          //   { color: "#ffcbcc" },    //已废弃
+          //   { color: "#ffcbcc" }
+          // ],
+          // positioner: function () {
+          //   return { x: 50, y: 50 }    //提示框的位置
+          // },
+          shared: true,
+          useHTML: false,
+          shadow: true,
+          // borderColor: "rgba(255, 255, 255, 0)",
+          // backgroundColor: "rgba(255, 255, 255, 0)",
+          valueDecimals: 2,
+          formatter: function () {
+            var e, t, z ,o = this;
+            return $.each(this.points, function () {
+              var n = this.point.index;
+              // e = Highcharts.dateFormat("20%y-%m-%d %H:%M", this.x),
+              //   t = "当前价:" + Highcharts.numberFormat(o.y,2),
+              //   z = "成交价：" + Highcharts.numberFormat(o.y,3)
+
+              e = Highcharts.dateFormat("%H:%M", this.x),
+                t = "当前价:" + Highcharts.numberFormat(o.y,2),
+                z = "成交价：" + Highcharts.numberFormat(o.y,3)
+            }),
+            "时间："+e + "  " + t + " " + z
+          }
+        }
+      });
+    })
+
+
+  </script>
+
+</head>
+<body>
+
+
+<div id="container" style="height: 400px; min-width: 310px;max-width:800px;margin: 0 auto;"></div>
+
+
+</body>
+</html>

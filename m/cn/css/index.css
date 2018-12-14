@@ -1,0 +1,2613 @@
+html, body {
+    height: 100%;
+}
+
+/* 首页全局样式 */
+
+.color1 {
+    color: #4affff;
+}
+.color2 {
+    color: #b0e1ff;
+}
+.color3 {
+    color: #007eff;
+}
+.color4 {
+    color: #ffb04a;
+}
+
+
+
+.zl_layout {
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 第七八屏地球 */
+.earth1 {
+    position: absolute;
+    height: 6.5rem;
+    width: 100%;
+    top: 5.5rem;
+    right: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: all 1s;
+}
+.earth1 .earth-earth {
+    position: absolute;
+    height: 6.5rem;
+    width: 6.5rem;
+    background-image: url(../../public/images/index/earth.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 1.8rem;
+    bottom: .5rem;
+    right: .4rem;
+    /* top: 0; */
+    /* left: 0; */
+    /* margin: auto; */
+    z-index: 4;
+    transition: all 1s;
+    opacity: 1;
+}
+.earth1 .earth-dianxian {
+    position: absolute;
+    width: 4.41rem;
+    height: 4.41rem;
+    background-image: url(../../public/images/index/earth-dianxian.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+    z-index: 4;
+    opacity: 1;
+    transition: all 1s;
+}
+.earth1 .earth-yuanxian {
+    position: absolute;
+    height: 6.75rem;
+    width: 6.75rem;
+    border-radius: 50%;
+    border: 2px solid #1B375B;
+    right: 1.3rem;
+    z-index: 4;
+    transition: all 1s;
+    opacity: 0;
+    top: .1rem;
+}
+.earth1.active {
+    opacity: 1;
+    transition: all 1s;
+}
+.earth1 .earth-earth.active {
+    opacity: 1;
+}
+.earth1 .earth-dianxian.active {
+    opacity: 1;
+}
+.earth1 .earth-yuanxian.active {
+    opacity: 1;
+}
+
+
+
+.earth2 {
+    position: absolute;
+    height: 6.5rem;
+    width: 100%;
+    top: 3rem;
+    right: 4rem;
+    z-index: 4;
+    opacity: 0;
+    transition: all 1s;
+}
+.earth2 .earth-earth {
+    position: absolute;
+    height: 6.5rem;
+    width: 6.5rem;
+    background-image: url(../../public/images/index/earth.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 1.8rem;
+    bottom: .5rem;
+    right: .4rem;
+    /* top: 0; */
+    /* left: 0; */
+    /* margin: auto; */
+    z-index: 4;
+    transition: all 1s;
+    opacity: 1;
+}
+.earth2 .earth-dianxian {
+    position: absolute;
+    width: 4.41rem;
+    height: 4.41rem;
+    background-image: url(../../public/images/index/earth-dianxian.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+    z-index: 4;
+    opacity: 0;
+    transition: all 1s;
+}
+.earth2 .earth-yuanxian {
+    position: absolute;
+    height: 6.75rem;
+    width: 6.75rem;
+    border-radius: 50%;
+    border: 2px solid #1B375B;
+    right: .47rem;
+    top: .02rem;
+    z-index: 4;
+    transition: all 1s;
+    opacity: 1;
+}
+.earth2.active {
+    opacity: 1;
+    transition: all 1s;
+}
+.earth2 .earth-earth.active {
+    opacity: 1;
+}
+.earth2 .earth-dianxian.active {
+    opacity: 1;
+}
+.earth2 .earth-yuanxian.active {
+    opacity: 1;
+}
+
+
+/* 粒子 */
+.lizi {
+    width:100%;height:100%; position:fixed;top:0;z-index: 4;display: none;
+}
+
+/* 全屏背景 */
+.main-bgc {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+}
+.main-bgc .up-down {
+    position: relative;
+    z-index: 3;
+}
+.main-bgc .up-down .bgc-img {
+    margin-top: -1px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.main-bgc .up-down .bgc-img:nth-child(1) {
+    background-image: url(../../public/images/bg/bg3x-01.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(2) {
+    background-image: url(../../public/images/bg/bg3x-02.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(3) {
+    background-image: url(../../public/images/bg/bg3x-03.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(4) {
+    background-image: url(../../public/images/bg/bg3x-04.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(5) {
+    background-image: url(../../public/images/bg/bg3x-05.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(6) {
+    background-image: url(../../public/images/bg/bg3x-06.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(7) {
+    background-image: url(../../public/images/bg/bg3x-07.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(8) {
+    background-image: url(../../public/images/bg/bg3x-08.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(9) {
+    background-image: url(../../public/images/bg/bg3x-09.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(10) {
+    background-image: url(../../public/images/bg/bg3x-10.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(11) {
+    background-image: url(../../public/images/bg/bg3x-11.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(12) {
+    background-image: url(../../public/images/bg/bg3x-12.png);
+}
+.main-bgc .up-down .bgc-img:nth-child(13) {
+    background-image: url(../../public/images/bg/bg3x-13.png);
+}
+
+/* 首页音乐控件 */
+.musiccontor {
+    width: 1rem;
+    height: .8rem;
+    position: fixed;
+    bottom: .5rem;
+    right: .5rem;
+    z-index: 999;
+    cursor: pointer;
+}
+.musiccontor span {
+    width: .01rem;
+    height: .02rem;
+    display: block;
+    background-color: #1861c6;
+    bottom: 0;
+    position: absolute;
+}
+.musiccontor a {
+    display: block;
+    color: #1861c6;
+    bottom: -2px;
+    right: .21rem;
+    position: absolute;
+    font-size: .16rem;
+    line-height: .16rem;
+    letter-spacing: 0;
+}
+.musiccontor span:nth-child(2) {
+    right: .15rem;
+    transition: all 1s;
+}
+.musiccontor span:nth-child(3) {
+    right: .1rem;
+    transition: all 1s;
+}
+.musiccontor span:nth-child(4) {
+    right: .05rem;
+    transition: all 1s;
+}
+.musiccontor span:nth-child(5) {
+    right: 0;
+    transition: all 1s;
+}
+
+.musiccontor span:nth-child(2).musicplay {
+    animation: music 1s linear 0s infinite;
+}
+.musiccontor span:nth-child(3).musicplay {
+    animation: music 0.5s linear 0s infinite;
+}
+.musiccontor span:nth-child(4).musicplay {
+    animation: music 1.1s linear 0s infinite;
+}
+.musiccontor span:nth-child(5).musicplay {
+    animation: music 0.4s linear 0s infinite;
+}
+
+/* 音乐控件动画 */
+@keyframes music {
+    0%{height: 2px;}
+    50%{height: 18px;}
+    100%{height: 2px;}
+}
+
+/* 首页banner焦点图 */
+.focus-advertising {
+    position: fixed;
+    z-index: 888;
+    width: 100%;
+    height: 100%;
+
+}
+.focus-advertising .focus-zhezhao {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+}
+.focus-advertising .focus-zhezhao.active {
+    background-color: rgba(0,0,0,0.6);
+    transition: all 1s;
+}
+.focus-advertising .focus-zhezhao .focus-banner {
+    position: absolute;
+    /* width: 6.04rem; */
+    width: 100%;
+    height: 9.38rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translate(0,200%);
+}
+.focus-advertising .focus-zhezhao .focus-banner.active {
+    transform: translate(0,0);
+    transition: all .8s ease-in-out;
+}
+.focus-advertising .focus-zhezhao .focus-banner .focus-img {
+    /* width: 6.04rem; */
+    width: 100%;
+    height: 8.07rem;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: .48rem;
+}
+.focus-advertising .focus-zhezhao .focus-banner .focus-img1 {
+    background-image: url(../../public/images/index/focus-001.png);
+}
+.focus-advertising .focus-zhezhao .focus-banner .focus-img2 {
+    background-image: url(../../public/images/index/focus-002.png);
+}
+.focus-advertising .focus-zhezhao .focus-banner .focus-close-btn {
+    /* position: absolute;
+    bottom: 0; */
+    /* margin-top: .48rem; */
+    margin: 0 auto;
+    width: .83rem;
+    height: .83rem;
+    background-image: url(../../public/images/index/focus-close-btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+
+/* 第一屏 */
+.swiper-slide-1 {
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.swiper-slide-1 .content {
+width: 100%;
+    height: 8rem;
+    /* height: 100%; */
+    position: absolute;
+    z-index: 10;
+    transform: scale(0);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.swiper-slide-1 .content .sy-logo {
+    width: 1.87rem;
+    height: 2.31rem;
+    background: url(../../public/images/logo@2x.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.swiper-slide-1 .content h3 {
+    color: #fff;
+    font-size: .6rem;
+    line-height: .8rem;
+    text-align: center;
+    margin-top: .1rem;
+    margin-bottom: .3rem;
+    padding: 0 .3rem;
+}
+
+.swiper-slide-1 .content > p {
+    color: #fff;
+    line-height: .36rem;
+    height: 20%;
+    font-size: 0.24rem;
+    text-align: center;
+    padding: 0px 15%;
+}
+
+.swiper-slide-1.swiper-slide-active .content.animte-1 {
+    transform: scale(1);
+    transition: all 1.5s;
+}
+.swiper-slide-1 .content .sy-banner {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    position: relative;
+}
+.swiper-slide-1 .content .dialink {
+    width: 3rem;
+    height: 1.73rem;
+    margin: 0 auto;
+/*     background-image: url(../../public/images/index/dialink-normal.png);
+    background-repeat: no-repeat;
+    background-size: contain; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+
+}
+.swiper-slide-1 .content .dialink1 .img {
+    width: 3rem;
+    height: 1.73rem;
+    background-image: url(../../public/images/index/dialink-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 1s;
+}
+/* .swiper-slide-1 .content .dialink2 .img {
+    width: 3rem;
+    height: 1.73rem;
+    background-image: url(../../public/images/index/dialink-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 1s;
+} */
+.swiper-slide-1 .content .dialink2 .img {
+    width: 3rem;
+    height: 1.73rem;
+    background-image: url(../../public/images/index/dialink-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 1s;
+}
+.swiper-slide-1 .content .dialink .text {
+font-size: 0.24rem;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    /* padding-right: .2rem; */
+}
+/* .swiper-slide-1 .content .dialink .text:after {
+    content: "";
+    width: .12rem;
+    height: .16rem;
+    display: block;
+    position: absolute;
+    background-image: url(../../public/images/index/dialink-jiantou.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: .27rem;
+    right: .15rem;
+} */
+
+
+
+/* 第一屏碎片 */
+
+#ku {
+    width: 100%;
+    height: 100%;
+}
+#ku li {
+    
+}
+#ku li span {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    color: red;
+}
+#ku li span:nth-child(1) {
+    width: 5.75rem;
+    height: 2.41rem;
+    background-image: url(../../public/images/ku/ku0006.png);
+    top: -11%;
+    left: 54%;
+    z-index:3; 
+    animation: in-out 12s linear 1.5s infinite;
+    transition: all 1s;
+}
+#ku li span:nth-child(2) {
+    width: 4.27rem;
+    height: 3.28rem;
+    background-image: url(../../public/images/ku/ku0002.png);
+top: 13%;
+    left: 76%;
+    z-index: 3;
+    animation: in-out 35s linear 3.2s infinite;
+    transition: all 1s;
+}
+#ku li span:nth-child(4) {
+    width: 4.25rem;
+    height: 3.92rem;
+    /* background-image: url(../../public/images/ku/ku0004.png); */
+    top: 64%;
+    left: 78%;
+    z-index: 2;
+    animation: in-out 14s linear 8s infinite;
+    transition: all 1s;
+}
+#ku li span:nth-child(6) {
+    width: 3.05rem;
+    height: 4.28rem;
+    background-image: url(../../public/images/ku/ku0006.png);
+    top: 74%;
+    left: -7%;
+    z-index: 5;
+    animation: in-out 12s linear 6s infinite;
+    transition: all 1s;
+}
+#ku li span:nth-child(7) {
+    width: 3.21rem;
+    height: 3.83rem;
+    background-image: url(../../public/images/ku/ku0007.png);
+    top: -14%;
+    left: -25%;
+    z-index: 4;
+    animation: in-out 23s linear 5s infinite;
+    transition: all 1s;
+}
+#ku li span:nth-child(8) {
+    width: .92rem;
+    height: 1.08rem;
+    background-image: url(../../public/images/ku/ku0008.png);
+    top: 59%;
+    left: 95%;
+    z-index: 4;
+    animation: in-out 12s linear 4s infinite;
+    transition: all 1s;
+}
+#ku li span:nth-child(9) {
+    width: 2.28rem;
+    height: 2.82rem;
+    background-image: url(../../public/images/ku/ku0009.png);
+    top: 79%;
+    left: 63%;
+    z-index: 3;
+    animation: in-out 33s linear 3s infinite;
+    transition: all 1s;
+}
+#ku li span:nth-child(10) {
+    width: 2.72rem;
+    height: 2.93rem;
+    /* background-image: url(../../public/images/ku/ku00010.png); */
+top: 54%;
+    left: 0%;
+    z-index: 4;
+    animation: in-out 32s linear 2s infinite;
+    transition: all 1s;
+}
+#ku li span:nth-child(12) {
+    width: 0.69rem;
+    height: .95rem;
+    background-image: url(../../public/images/ku/ku00012.png);
+    top: 26%;
+    left: 11%;
+    z-index: 5;
+
+    animation: in-out 23s linear 0s infinite;
+    transition: all 1s;
+}
+
+
+
+
+/* 第一屏碎片动画 */
+
+@keyframes in-out {
+
+            0%{
+                opacity: 1;
+                transform: translate(0,0) rotate(0deg);
+            }
+            25%{
+                opacity: 1;
+                transform: translate(-30%,-30%) rotate(-60deg);
+            }
+            50%{
+                opacity: 1;
+                transform: translate(0,0) rotate(60deg);
+            }
+            75%{
+                opacity: 1;
+                transform: translate(30%,30%) rotate(60deg);
+            }
+            100%{
+                opacity: 1;
+                transform: translate(0,0) rotate(0deg);
+            }
+}
+
+
+/* 碎片炸开动画 */
+
+#ku li span:nth-child(1).animate-spread {
+    transform: translate(0,-800%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(2).animate-spread {
+    transform: translate(400%,-800%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(3).animate-spread {
+    transform: translate(-800%,200%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(4).animate-spread {
+    transform: translate(400%,400%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(5).animate-spread {
+    transform: translate(800%,-800%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(6).animate-spread {
+    transform: translate(-400%,-400%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(7).animate-spread {
+    transform: translate(-400%,400%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(8).animate-spread {
+    transform: translate(400%,0%) scale(5);
+    opacity: 0;
+    transition: all 2s;
+}
+#ku li span:nth-child(9).animate-spread {
+    transform: translate(0%,400%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(10).animate-spread {
+    transform: translate(-800%,600%) scale(5);
+    transition: all 5s;
+}
+#ku li span:nth-child(11).animate-spread {
+    transform: translate(800%,800%) scale(5);
+    transition: all 2s;
+}
+#ku li span:nth-child(12).animate-spread {
+    transform: translate(-600%,0) scale(5);
+    transition: all 2s;
+}
+
+
+
+
+
+/*第二屏*/
+
+.swiper-slide-2 .diamonds {
+    width: 5rem;
+    height: 3.16rem;
+}
+.swiper-slide-2 .diamonds .diamonds-rotate {
+    margin: 0 auto;
+}
+.swiper-slide-2 .diamonds .diamonds-rotate img {
+    width: 5.18rem;
+}
+.swiper-slide-2 .content {
+    width: 5.6rem;
+    height: 7.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    padding-left: .4rem;
+}
+.swiper-slide-2 .content h3 {
+    color: #fff;
+    font-size: .64rem;
+    line-height: .64rem;
+    padding-bottom: .59rem;
+    padding-top: .4rem;
+}
+.swiper-slide-2 .content h4 {
+    color: #fff;
+    text-align: left;
+    font-size: .47rem;
+    line-height: .47rem;
+    padding-bottom: .16rem;
+}
+.swiper-slide-2 .content p {
+    color: #fff;
+    text-align: left;
+}
+.swiper-slide-2 .content p.p1 {
+    font-size: .28rem;
+    line-height: .28rem;
+}
+.swiper-slide-2 .content p.p2 {
+    font-size: .24rem;
+    line-height: .36rem;
+}
+.swiper-slide-2 .content .xian {
+    width: 5.22rem;
+    height: .01rem;
+    background: #fff;
+    opacity: .6;
+    margin-top: .31rem;
+    margin-bottom: .31rem;
+}
+
+
+
+
+
+/* 第三屏 */
+.swiper-slide-3 {
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.swiper-slide-3 .content {
+    width: 100%;
+    height: 8rem;
+/*     background-color: red;
+    opacity: 0.5; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+.swiper-slide-3 .content .content-img {
+    width: 6.52rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: .3rem;
+    margin-top: .78rem;
+}
+.swiper-slide-3 .content .nomal {
+    width: 6.48rem;
+    height: 3.87rem;
+    position: absolute;
+}
+.swiper-slide-3 .content .content-img img {
+    width: 6.48rem;
+    height: 3.87rem;
+    float: left;
+    border: .01rem solid rgba(255,255,255,0.4);
+}
+.swiper-slide-3 .content .content-img .video-button {
+    width: 1.35rem;
+    height: 1.35rem;
+    position: absolute;
+    background-image: url(../../public/images/index/video-button.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    bottom: .0;
+    right: 0;
+    margin: auto;
+}
+.swiper-slide-3 .content h3 {
+    font-size: .64rem;
+    line-height: .65rem;
+    padding-bottom: .25rem;
+}
+.swiper-slide-3 .content p {
+    width: 6.48rem;
+    font-size: .22rem;
+    margin: 0 auto;
+}
+.swiper-slide-3 .content p.p1 {
+    font-size: .28rem;
+    line-height: .45rem;
+}
+.swiper-slide-3 .content p.p2 {
+    line-height: .36rem;
+    padding: 0 .6rem;
+    text-align: left;
+}
+
+.movie {
+    width: 6.49rem;
+    height: 3.89rem;
+    background-color: #000;
+}
+.movie #diamond-story {
+    width: 6.47rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    display: none;
+}
+.swiper-slide-3 .mindiamonds {
+}
+.swiper-slide-3 .mindiamonds span:nth-child(1) {
+    left: 8%;
+    top: 1%;
+}
+
+.swiper-slide-3 .mindiamonds span:nth-child(2) {
+    right: 6%;
+    top: 23%;
+}
+.swiper-slide-3 .mindiamonds span:nth-child(1) img {
+    width: .34rem;
+}
+.swiper-slide-3 .mindiamonds span:nth-child(2) img {
+    width: .47rem;
+}
+
+
+/* 第四屏 */
+
+
+.swiper-slide-4 {
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.swiper-slide-4 .content {
+    width: 100%;
+    height: 8.5rem;
+    /* background-color: red; */
+    /* opacity: 0.5; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.swiper-slide-4 .content .content-dsc-button-show {
+    padding: 0 .15rem;
+    line-height: .36rem;
+    background-image: url(../../public/images/index/quanjia-yellow.png);
+    background-size: .26rem .26rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.swiper-slide-4 .content .content-text {
+    color: #fff;
+
+}
+.swiper-slide-4 .content .content-text h3 {
+    font-size: .64rem;
+    line-height: .9rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.swiper-slide-4 .content .content-text li{
+    font-size: .24rem;
+    line-height: .36rem;
+    text-align: left;
+    padding-bottom: .8rem;
+    position: relative;
+    z-index: 2;
+
+}
+
+.swiper-slide-4 .content .content-text li.li1{
+    padding-left: .58rem;
+    margin-left: .6rem;
+}
+.swiper-slide-4 .content .content-text li.li2{
+    padding-left: .58rem;
+    margin-left: 2.74rem;
+}
+.swiper-slide-4 .content .content-text li.li3{
+    padding-left: .58rem;
+    margin-left: 2.74rem;
+}
+.swiper-slide-4 .content .content-text li.li4{
+    padding-left: .58rem;
+    margin-left: .6rem;
+}
+.swiper-slide-4 .content .content-text li.li5{
+    position: absolute;
+    margin-left: 0;
+    top: 3.1rem;
+    left: 0;
+    /* right: 0; */
+    bottom: 0;
+    margin: auto;
+    width: 2.89rem;
+    height: 3.16rem;
+    background-image: url(../../public/images/index/dazuanshi-page3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+
+
+.swiper-slide-4 .content .content-text ul li.li1:before {
+    content: "";
+    position: absolute;
+    width: .38rem;
+    height: .24rem;
+    background-image: url(../../public/images/index/01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: .08rem;
+    left: 0;
+    display: block;
+
+}
+.swiper-slide-4 .content .content-text ul li.li2:before {
+    content: "";
+    background-image: url(../../public/images/index/02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    width: .38rem;
+    height: .24rem;
+    top: .08rem;
+    left: 0;
+    display: block;
+}
+.swiper-slide-4 .content .content-text ul li.li3:before {
+    content: "";
+    background-image: url(../../public/images/index/03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    width: .38rem;
+    height: .24rem;
+    top: .08rem;
+    left: 0;
+    display: block;
+}
+.swiper-slide-4 .content .content-text ul li.li4:before {
+    content: "";
+    background-image: url(../../public/images/index/04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    width: .38rem;
+    height: .24rem;
+    top: .08rem;
+    left: 0;
+    display: block;
+}
+/* 第四屏详情 */
+.swiper-slide-4 .content-dsc {
+    height: 9rem;
+    /* margin-left: .55rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    display: none;
+    color: #fff;
+    background-image: url(../../public/images/index/bgc-detail-page4.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 6.85rem 7.85rem;
+}
+
+
+.content-dsc-button-hidden {
+    position: fixed;
+    top: .4rem;
+    right: .4rem;
+    width: .6rem;
+    height: .6rem;
+    background-image: url(../../public/images/index/quan-cha-lan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    z-index: 999;
+    display: none;
+}
+.swiper-slide-4 .content-dsc .content-img {
+    position: absolute;
+    height: 3.1rem;
+    width: 3.1rem;
+    background-image: url(../../public/images/index/fuhao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    top: 0;
+    right: 3.62rem;
+}
+.swiper-slide-4 .content-dsc .text  {
+    padding-right: 1rem;
+    width: 2.72rem;
+    height: 1.86rem;
+    position: absolute;
+    top: .65rem;
+    right: 0;
+    text-align: left;
+}
+.swiper-slide-4 .content-dsc .text h5  {
+    font-size: .28rem;
+    line-height: .45rem;
+    padding-bottom: .15rem;
+    font-weight: normal;
+}
+.swiper-slide-4 .content-dsc .text p {
+    font-size: .23rem;
+    line-height: .35rem;
+}
+.swiper-slide-4 .content-dsc p.bgc-blue {
+    width: 4.52rem;
+    height: 1.06rem;
+    font-size: .34rem;
+    line-height: .54rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    position: absolute;
+    top: -10%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    font-weight: bold;
+    text-align: left;
+}
+.swiper-slide-4 .content-dsc ol dl {
+    width: 3.5rem;
+    position: absolute;
+    padding-top: 2rem;
+}
+.swiper-slide-4 .content-dsc ol dl dt {
+    font-size: .28rem;
+    line-height: .45rem;
+    padding-bottom: .15rem;
+    font-weight: normal;
+}
+.swiper-slide-4 .content-dsc ol dl dd {
+    font-size: .22rem;
+    line-height: .36rem;
+}
+.swiper-slide-4 .content-dsc ol dl.dl1 {
+    float: left;
+    bottom: .05rem;
+    left: .1rem;
+}
+.swiper-slide-4 .content-dsc ol dl.dl1 dt {
+    padding-left: .2rem;
+}
+.swiper-slide-4 .content-dsc ol dl.dl1 dd {
+    padding-left: .2rem;
+}
+.swiper-slide-4 .content-dsc ol dl.dl1:before {
+    position: absolute;
+    top: 0;
+    left: .94rem;
+    display: block;
+    content: "";
+    width:1.92rem;
+    height: 2.06rem;
+    background-image: url(../../public/images/index/diamond-red.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.swiper-slide-4 .content-dsc ol dl.dl2 {
+    right: .9rem;
+    bottom: 1.25rem;
+}
+.swiper-slide-4 .content-dsc ol dl.dl2 dt {
+    padding-left: 1rem;
+}
+.swiper-slide-4 .content-dsc ol dl.dl2 dd {
+    padding-left: 1rem;
+}
+.swiper-slide-4 .content-dsc ol dl.dl2:before {
+    position: absolute;
+    top: 0;
+    left: 1.34rem;
+    display: block;
+    content: "";
+    width:1.92rem;
+    height: 2.06rem;
+    background-image: url(../../public/images/index/diamond-blue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* 第五屏 */
+
+.swiper-slide-5 {
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.swiper-slide-5 .content {
+    width: 6.65rem;
+    height: 9.65rem;
+    /* background-color: red; */
+    /* opacity: 0.5; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+.swiper-slide-5 .content .content-img {
+    height: 4.50rem;
+    background-image: url(../../public/images/index/bgc-sanjiaoxing-page5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+.swiper-slide-5 .content h3 {
+    font-size: .6rem;
+    line-height: .81rem;
+    padding-bottom: .6rem;
+}
+.swiper-slide-5 .content p {
+    font-size: .22rem;
+    line-height: .3rem;
+}
+.swiper-slide-5 .content-text {
+width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 1rem;
+}
+.swiper-slide-5 .content p.bgc-blue {
+    height: .6rem;
+    width: 5.17rem;
+    background-image: url(../../public/images/index/bgc-blue-page5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    margin: .4rem auto;
+
+}
+.swiper-slide-5 .content ul {
+    padding-left: .2rem;
+}
+.swiper-slide-5 .content li {
+    width: 5.2rem;
+    font-size: .22rem;
+    line-height: .36rem;
+    text-align: left;
+    padding-left: .2rem;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: .16rem
+
+}
+.swiper-slide-5 .content li:before {
+content: "";
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 6px;
+    left: 0;
+}
+
+
+/* 第六屏 */
+
+.swiper-slide-6 {
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.swiper-slide-6 .content {
+    width: 6.42rem;
+    /* 642/2=321 */
+    height: 7.4rem;
+    /* 740/2=370 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.swiper-slide-6 .content h3 {
+    height: 1.55rem;
+    width: 5rem;
+    color: white;
+    margin-top: 1rem;
+    font-size: .6rem;
+    text-align: center;
+    line-height: .8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.swiper-slide-6 .content .little-title-1 {
+    left: 1.87rem;
+    top: 2.75rem;  
+    width: 2.69rem;
+    height: 1.9rem;
+    background: url(../../public/images/index/page6-keliutong.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    /* opacity: 0; */
+}
+.swiper-slide-6 .content .little-title-2 {
+    right: 2.16rem;
+    top: 2.44rem;
+    width: 2.11rem;
+    height: 2.53rem;
+    background: url(../../public/images/index/page6-kexingzou.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin: auto;
+    /* opacity: 0; */
+}
+.swiper-slide-6 .content .little-title-3 {
+    left: 2.16rem;
+    bottom: 2.44rem;
+    width: 2.67rem;
+    height: 1.98rem;
+    background: url(../../public/images/index/page6-kekanghuo.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin: auto;
+    /* opacity: 0; */
+}
+
+
+.swiper-slide-6 .content .little-title-4 {
+    right: 2.16rem;
+    bottom: 2.44rem;
+    height: 2.47rem;
+    width: 2.43rem;
+    background: url(../../public/images/index/page6-rangnigengmeili.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin: auto;
+    /* opacity: 0; */
+}
+/* 碎片动画 */
+.swiper-slide-6.swiper-slide-active .content .little-title-1 {
+    left: 0rem;
+    top: .29rem;
+    opacity: 1;
+    transition: all 1s ease-in-out 0s;
+}
+.swiper-slide-6 .content .little-3-1 h5 {
+    padding-left: .6rem;
+}
+.swiper-slide-6.swiper-slide-active .content .little-title-2 {
+    right: .23rem;
+    top: 0rem;
+    opacity: 1;
+    transition: all 1s ease-in-out 0s;
+}
+
+.swiper-slide-6.swiper-slide-active .content .little-title-3 {
+    left: 0rem;
+    bottom: .33rem;
+    opacity: 1;
+    transition: all 1s ease-in-out 0s;
+}
+
+.swiper-slide-6.swiper-slide-active .content .little-title-4 {
+    right: 0rem;
+    bottom: 0rem;
+    opacity: 1;
+    transition: all 1s ease-in-out 0s;
+}
+
+
+.swiper-slide-6 .content h5 {
+    color: white;
+    font-size: .24rem;
+    padding-top: 0.50rem;
+    padding-bottom: .08rem;
+    padding-left: .2rem;
+    line-height: .38rem;
+}
+.swiper-slide-6 .content #hc01 {
+    padding-right: 20px;
+}
+
+.swiper-slide-6 .content #hc02 {
+    padding-right: 53px;
+}
+
+
+
+/*µ¯³ö²ãµÄ±³¾°*/
+
+.swiper-slide-6 .swiper-container {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    top: 0%;
+}
+.swiper-slide-6 .swiper-container .text {
+    position: absolute;
+    width: 5.47rem;
+    height: 7.12rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.swiper-slide-6 .swiper-container .swiper-slide:nth-child(1) .text {
+    background-image: url(../../public/images/index/page6-open-liutong.png);
+    background-position: 50% 50%;
+}
+.swiper-slide-6 .swiper-container .swiper-slide:nth-child(2) .text {
+    background-image: url(../../public/images/index/page6-open-xiedai.png);
+    background-position: 50% 67%;
+}
+.swiper-slide-6 .swiper-container .swiper-slide:nth-child(3) .text {
+background-image: url(../../public/images/index/page6-open-tonghuo.png);
+    background-position: 50% 57%;
+}
+.swiper-slide-6 .swiper-container .swiper-slide:nth-child(4) .text {
+    background-image: url(../../public/images/index/page6-open-meili.png);
+        background-position: 50% 50%;
+}
+.swiper-slide-6 .swiper-container .text p {
+    position: relative;
+}
+.swiper-slide-6 .swiper-container .text p:before {
+content: "";
+    position: absolute;
+    display: block;
+    width: .1rem;
+    height: .1rem;
+    border-radius: 50%;
+    left: .55rem;
+    top: .1rem;
+    background: #fff;
+}
+.swiper-slide-6 .swiper-container .text>h3 {
+    font-size: .56rem;
+    line-height: .5rem;
+    color: white;
+    /* margin-top: 2rem; */
+    text-align: center;
+    padding-top: .7rem;
+    padding-bottom: .2rem;
+    position: relative;
+    z-index: -1;
+}
+.swiper-slide-6 .swiper-container .text>h5 {
+font-size: .26rem;
+    color: white;
+    margin-top: .2rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+.swiper-slide-6 .swiper-container .text>p{
+font-size: .22rem;
+    color: white;
+    line-height: .38rem;
+    padding: 0 .8rem;
+    margin: 0 .6rem;
+    position: relative;
+}
+
+
+.content-pop-button-hidden {
+    position: fixed;
+    top: .4rem;
+    right: .4rem;
+    width: .6rem;
+    height: .6rem;
+    background-image: url(../../public/images/index/quan-cha-lan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    z-index: 999;
+    display: none;
+}
+
+/* 第六屏默认屏小钻石 */
+.swiper-slide-6 .mindiamonds {
+}
+.mindiamonds span {
+    position: absolute;
+}
+
+.swiper-slide-6 .mindiamonds span:nth-child(1) {
+    top: -21%;
+    left: 18%;
+}
+
+.swiper-slide-6 .mindiamonds span:nth-child(2) {
+    bottom: 24%;
+    right: 0%;
+}
+
+.swiper-slide-6 .mindiamonds span:nth-child(3) {
+    bottom: -26%;
+    left: 19%;
+}
+.swiper-slide-6 .mindiamonds span:nth-child(1) img {
+    width: 1.14rem;
+}
+.swiper-slide-6 .mindiamonds span:nth-child(2) img {
+    width: .96rem;
+}
+.swiper-slide-6 .mindiamonds span:nth-child(3) img {
+    width: 1.42rem;
+}
+
+
+/* 第六屏弹出层小钻石 */
+.swiper-slide-6 .mindiamonds span.open-diamond:nth-child(1) {
+    left: 81%;
+    top: 55%;
+    bottom: 0;
+}
+.swiper-slide-6 .mindiamonds span.open-diamond:nth-child(1)  img {
+    width: .98rem;
+}
+.swiper-slide-6 .mindiamonds span.open-diamond:nth-child(2) {
+    left: 29%;
+    top: 5%;
+    bottom: 0;
+}
+.swiper-slide-6 .mindiamonds span.open-diamond:nth-child(2)  img {
+    width: .27rem;
+}
+
+.swiper-slide-6 .mindiamonds span.open-diamond:nth-child(3) {
+    left: 25%;
+    top: 74%;
+    bottom: 0;
+}
+.swiper-slide-6 .mindiamonds span.open-diamond:nth-child(3)  img {
+    width: .51rem;
+}
+
+
+
+
+
+
+/* 第七屏 */
+
+.swiper-slide-7 {
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.swiper-slide-7 .content {
+    width: 5.68rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+.swiper-slide-7 .content .content-img {
+    height: 2rem;
+    background-image: url(../../public/images/index/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.swiper-slide-7 .content h3 {
+    font-size: .64rem;
+    line-height: .64rem;
+    padding-bottom: .2rem;
+    text-align: center;
+}
+.swiper-slide-7 .content p.bgc-sanjiao {
+    height: .21rem;
+    background-image: url(../../public/images/index/page7-bgc-sanjiao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 60%;
+    margin-bottom: .2rem;
+}
+.swiper-slide-7 .content p {
+    font-size: .23rem;
+    line-height: .4rem;
+    text-align: left;
+    padding-left: .12rem;
+}
+.swiper-slide-7 .content p.p1 {
+    padding-bottom: .2rem;
+    line-height: .23rem;
+}
+.swiper-slide-7 .earth {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5.5rem;
+    background-image: url(../../public/images/index/earth.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+
+
+/* 第八屏 */
+.swiper-slide-8 {
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.swiper-slide-8 .content {
+    width: 100%;
+    height: 8.53rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    background-image: url(../../public/images/index/page-8-bgc-sanjiao.png);
+    background-repeat: no-repeat;
+    background-size: 5.93rem 4.57rem;
+    background-position: -15% 65%;
+
+}
+
+.swiper-slide-8 .content .content-text {
+    color: #fff;
+
+}
+.swiper-slide-8 .content .content-text h3 {
+    font-size: .64rem;
+    line-height: .64rem;
+    text-align: center;
+    text-indent: 1.16rem;
+    background-image: url(../../public/images/index/page8-1-0.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3.8rem;
+    margin: 0 auto;
+    margin-bottom: .29rem;
+}
+.swiper-slide-8 .content .content-text h5 {
+    font-size: .46rem;
+    line-height: .46rem;
+    padding-bottom: 1rem;
+    text-indent: .15rem;
+    font-weight: normal;
+}
+.swiper-slide-8 .content .content-text ul li {
+    padding-bottom: .7rem;
+    padding-left: 1.2rem;
+}
+.swiper-slide-8 .content .content-text ul li:nth-child(2) dl {
+    padding-left: 3.06rem;
+}
+.swiper-slide-8 .content .content-text ul li:nth-child(3) dl {
+    padding-left: .9rem;
+}
+.swiper-slide-8 .content .content-text dl {
+    text-align: left;
+}
+.swiper-slide-8 .content .content-text dl dt {
+    font-size: .27rem;
+    line-height: .27rem;
+    padding-bottom: .19rem;
+    position: relative;
+}
+.swiper-slide-8 .content .content-text dl dt:before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: -9%;
+    top: -35%;
+}
+.swiper-slide-8 .content .content-text dl dt.dt1:before {
+    width: .62rem;
+    height: .62rem;
+    background-image: url(../../public/images/index/page8-bgc-dt1.png);
+
+}
+.swiper-slide-8 .content .content-text dl dt.dt2:before {
+    width: .57rem;
+    height: .62rem;
+    background-image: url(../../public/images/index/page8-bgc-dt2.png);
+    left: -16%;
+    top: -35%;
+}
+.swiper-slide-8 .content .content-text dl dt.dt3:before {
+    width: .58rem;
+    height: .54rem;
+    background-image: url(../../public/images/index/page8-bgc-dt3.png);
+}
+
+
+
+.swiper-slide-8 .content .content-text dl dd {
+    font-size: .21rem;
+    line-height: .40rem;
+    padding-left: .16rem;
+    position: relative;
+}
+.swiper-slide-8 .content .content-text dl dd:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: .06rem;
+    height: .06rem;
+    border-radius: 50%;
+    top: .15rem;
+    left: 0;
+    background-color: #fff;
+}
+.swiper-slide-8 .content .content-text dl dd:last-child {
+    padding-bottom: 0;
+}
+.swiper-slide-8 .content .content-text .know-more {
+    font-size: .28rem;
+    line-height: .76rem;
+    height: 0.76rem;
+    background-size: contain;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../../public/images/index/page8-bgc-knowmore.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.swiper-slide-8 .content .content-text .know-more a {
+    font-size: .28rem;
+    color: #FFB04A;
+    position: relative;
+    padding: 0 .3rem;
+    padding-left: .15rem;
+    background-image: url(../../public/images/index/page8-bgc-jiantou.png);
+    background-repeat: no-repeat;
+    background-size: .15rem .28rem;
+    background-position: center right;
+}
+
+
+
+/* 第九屏 */
+.swiper-slide-9 {
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.swiper-slide-9 .content {
+    position: absolute;
+    width: 7.5rem;
+    height: 100%;
+}
+
+.swiper-slide-9 .content h3 {
+    color: #fff;
+    font-size: .6rem;
+    line-height: .8rem;
+    text-align: center;
+}
+.swiper-slide-9 .content ul {
+    width: 7.5rem;
+    height: 100%;
+    position: relative;
+}
+.swiper-slide-9 .content ul li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 1px solid #18588B;
+    transform: translate(-50%,-50%);
+}
+.swiper-slide-9 .content ul li span {
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.swiper-slide-9 .content ul li:nth-child(1) {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: none;
+    border-radius: 50%;
+}
+.swiper-slide-9 .content ul li:nth-child(1) span:nth-child(1) {
+    width: 3.8rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    top: 1.20rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 1s;
+}
+.swiper-slide-9 .content ul li:nth-child(2) {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.swiper-slide-9 .content ul li:nth-child(2) span:nth-child(1) {
+    width: 1.67rem;
+    height: 1.27rem;
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(../../public/images/index/page9-quanqiujiaoyisuo.png);
+    opacity: 0;
+    transition: all 1s;
+}
+.swiper-slide-9 .content ul li:nth-child(2) span:nth-child(2) {
+    width: 0.94rem;
+    height: 1.12rem;
+    top: 72%;
+    left: 4%;
+    transform: translate(-50%,-50%);
+    background-image: url(../../public/images/index/page9-yuantou.png);
+    opacity: 0;
+    transition: all 1s;
+}
+.swiper-slide-9 .content ul li:nth-child(2) span:nth-child(3) {
+    width: 1.18rem;
+    height: 1.29rem;
+    bottom: -6%;
+    right: -3%;
+    transform: translate(-50%,0);
+    background-image: url(../../public/images/index/page9-gongyinshang.png);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.swiper-slide-9 .content ul li:nth-child(3) {
+    width: 7rem;
+    height: 7rem;
+}
+.swiper-slide-9 .content ul li:nth-child(3) span:nth-child(1) {
+    width: 0.94rem;
+    height: 1.22rem;
+    top: .5rem;
+    left: .5rem;
+    transform: translate(0,0);
+    background-image: url(../../public/images/index/page9-siren.png);
+    opacity: 0;
+    transition: all 1s;
+}
+.swiper-slide-9 .content ul li:nth-child(3) span:nth-child(2) {
+    width: 0.87rem;
+    height: 1.18rem;
+    bottom: -16%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    background-image: url(../../public/images/index/page9-jiaoyisuo.png);
+    opacity: 0;
+    transition: all 1s;
+}
+.swiper-slide-9 .content ul li:nth-child(3) span:nth-child(3) {
+    width: 0.94rem;
+    height: 1.10rem;
+    top: -1%;
+    right: 17%;
+    transform: translate(-50%,0);
+    background-image: url(../../public/images/index/page9-caifuguanli.png);
+    opacity: 0;
+    transition: all 1s;
+}
+.swiper-slide-9 .content ul li:nth-child(4) {
+    width: 10rem;
+    height: 10rem;
+}
+.swiper-slide-9 .content ul li:nth-child(4) span:nth-child(1) {
+    width: 1.28rem;
+    height: 1.28rem;
+    top: -3%;
+    left: 31%;
+    transform: translate(0,0);
+    background-image: url(../../public/images/index/page9-maoyishang.png);
+    opacity: 0;
+    transition: all 1s;
+}
+.swiper-slide-9 .content ul li:nth-child(4) span:nth-child(2) {
+    width: 1.18rem;
+    height: 1.19rem;
+    bottom: -9%;
+    right: 22%;
+    transform: translate(-50%,-50%);
+    background-image: url(../../public/images/index/page9-touzizhe.png);
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* 　小钻石旋转 */
+.swiper-slide-9 .content ul li:nth-child(5) {
+    width: 10rem;
+    height: 10rem;
+    border: none;
+}
+.swiper-slide-9 .content ul li:nth-child(5) img {
+    width: .56rem;
+}
+.swiper-slide-9 .content ul li:nth-child(6) {
+    width: 10rem;
+    height: 10rem;
+    border: none;
+}
+.swiper-slide-9 .content ul li:nth-child(6) img {
+    width: .92rem;
+}
+.swiper-slide-9 .content ul li:nth-child(7) {
+    width: 10rem;
+    height: 10rem;
+    border: none;
+}
+.swiper-slide-9 .content ul li:nth-child(7) img {
+    width: .69rem;
+}
+.swiper-slide-9 .content ul li:nth-child(5) span:nth-child(1) {
+    top: 6.4rem;
+    right: 7.67rem;
+}
+
+.swiper-slide-9 .content ul li:nth-child(6) span:nth-child(1) {
+    top: 0;
+    right: 2rem;
+}
+.swiper-slide-9 .content ul li:nth-child(7) span:nth-child(1) {
+    top: 6rem;
+    right: 1.6rem;
+}
+
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(5) {
+    animation: rotate 6s linear 0s infinite;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(6)  {
+    animation: rotate 6s linear 0.5s infinite;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(7)  {
+    animation: rotate 6s linear 1s infinite;
+}
+
+/* 第九屏动画 */
+
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(1) span:nth-child(1) {
+    opacity: 1;
+    transition: all 1s ease-in-out 0s;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(2) span:nth-child(1) {
+    opacity: 1;
+    transition: all 1s ease-in-out 0.5s;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(2) span:nth-child(2) {
+    opacity: 1;
+    transition: all 1s ease-in-out 1s;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(2) span:nth-child(3) {
+    opacity: 1;
+    transition: all 1s ease-in-out 1.3s;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(3) span:nth-child(1) {
+    opacity: 1;
+    transition: all 1s ease-in-out 1.6s;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(3) span:nth-child(2) {
+    opacity: 1;
+    transition: all 1s ease-in-out 1.8s;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(3) span:nth-child(3) {
+    opacity: 1;
+    transition: all 1s ease-in-out 2s;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(4) span:nth-child(1) {
+    opacity: 1;
+    transition: all 1s ease-in-out 2.1s;
+}
+.swiper-slide-active.swiper-slide-9 .content ul li:nth-child(4) span:nth-child(2) {
+    opacity: 1;
+    transition: all 1s ease-in-out 2.3s;
+}
+
+
+/* //引擎模式旋转 */
+@keyframes rotate {
+            0%{
+                transform: translate(-50%,-50%) rotate(0deg);
+            }
+            50%{
+                transform: translate(-50%,-50%) rotate(5deg);
+            }
+            100%{
+                transform: translate(-50%,-50%) rotate(0deg);
+            }
+}
+
+
+
+
+
+
+/* 第十屏 */
+.swiper-slide-10 {
+    background-size: 100% 100%;
+}
+
+.swiper-slide-10 .content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.swiper-slide-10 .content .text {
+    margin-top: -0.5rem;
+    height: .8rem;
+}
+.swiper-slide-10 .content .text span.minfangkuai {
+width: 0.07rem;
+    height: 0.07rem;
+    background: #b0e1ff;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin: 3px 10px;
+}
+.swiper-slide-10 .content h3 {
+    line-height: .8rem;
+    color: white;
+    font-size: .64rem;
+    margin-top: 1.35rem;
+    text-align: left;
+    width: 3rem;
+    float: right;
+    padding-right: .9rem;
+}
+.swiper-slide-10 h5 {
+    font-size: .34rem; 
+    line-height: .34rem;
+    padding-bottom: .22rem;
+    color: #fff;
+}
+.swiper-slide-10 .content p {
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+}
+.swiper-slide-10 .content .guang {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1.37rem;
+    height: 1.88rem;
+    box-shadow: 0 0 202px #fff;
+    top: 25%;
+    left: 32%;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.swiper-slide-10 .content .content-left {
+    width: 4.48rem;
+    height: 4.45rem;
+    position: absolute;
+    left: 0rem;
+    top: 2.26rem;
+}
+.swiper-slide-10 .content .img {
+    width: 4.48rem;
+    height: 4.48rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: relative;
+}
+.swiper-slide-10 .content .content-left .img {
+    background-image: url(../../public/images/5left@3x.png);
+    z-index: 2;
+}
+.swiper-slide-10 .content .content-right {
+    width: 4.48rem;
+    height: 4.7rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0rem;
+}
+.swiper-slide-10 .mindiamonds span:nth-child(1) {
+left: 61%;
+    top: 27%;
+}
+.swiper-slide-10 .mindiamonds span:nth-child(1) img {
+    width: .28rem;
+}
+.swiper-slide-10 .content .content-right .img {
+    background-image: url(../../public/images/5right@3x.png);
+}
+/* 第九屏动画 */
+.swiper-slide-active.swiper-slide-10 .content .content-left {
+    animation: change-5 0.8s linear 0s 1;
+}
+.swiper-slide-active.swiper-slide-10 .content .content-right {
+    animation: change-5 0.8s linear 0s 1;
+}
+.swiper-slide-active.swiper-slide-10 .content .guang {
+    animation: guang 3s linear 3s infinite;
+}
+
+@keyframes change-5 {
+    0% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 呼吸光 */
+@keyframes guang {
+    0%{transform: scale(0.5);opacity: 1;}
+    50%{transform: scale(1);opacity: 1;}
+    100%{transform: scale(0.5);opacity: 1;}
+    
+}
+
+@keyframes zuanshi-to-right {
+    0% {
+        transform: translate(-50px, 0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+
+
+/*第十一屏*/
+.swiper-slide-11 {
+    height: 100%;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.swiper-slide-11 .content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.swiper-slide-11 .content > h3 {
+    color: white;
+    font-size: .6rem;
+    margin-top: 1rem;
+}
+
+.swiper-slide-11 .mindiamonds span:nth-child(1) {
+    left: 9%;
+    top: 13%;
+}
+
+.swiper-slide-11 .mindiamonds span:nth-child(2) {
+right: -4%;
+    top: 38%;
+}
+
+.swiper-slide-11 .mindiamonds span:nth-child(3) {
+    bottom: 16%;
+    left: 4%;
+}
+
+
+/*第十二屏*/
+.swiper-slide-12 {
+    background: none;
+    position: relative;
+}
+
+.swiper-slide-12 .content {
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+.swiper-slide-12 .content .content-top h3{
+    padding-top: .8rem;
+    font-size: .6rem;
+    line-height: .6rem;
+    padding-bottom: .20rem;
+    color: #fff;
+}
+.swiper-slide-12 .content .content-top h5{
+    font-size: .22rem;
+    line-height: .22rem;
+}
+.swiper-slide-12 .content .img {
+    height: 3.65rem;
+    width: 100%;
+    margin-left: 1.42rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 0;
+}
+.swiper-slide-12 .content .img .in {
+    position: absolute;
+    width: 3.96rem;
+    height: 3.03rem;
+    background-image: url(../../public/images/index/page12-sanjiao1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 7%;
+    left: -8%;
+    z-index: 3;
+}
+
+.swiper-slide-12 .content .img .out {
+width: 4.99rem;
+    height: 3.65rem;
+    background-image: url(../../public/images/index/page12-sanjiao2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 6%;
+
+}
+.swiper-slide-12 .content .img .txt-to-about {
+    font-size: .36rem;
+    width: 2.3rem;
+    height: 0.5rem;
+    background-size: contain;
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    left: 27%;
+}
+.swiper-slide-12 .content .img .txt-to-about:after {
+    content: "";
+    width: .30rem;
+    height: .30rem;
+    display: block;
+    position: absolute;
+    background-image: url(../../public/images/index/page12-quanjialv.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: .12rem;
+    right: 0rem;
+}
+.swiper-slide-12 .content .img .txt-to-about a {
+    color: #4affff;
+    padding: 0 .3rem;
+}
+
+.swiper-slide-12 .content .text {
+    font-size: .22rem;
+    color: white;
+    line-height: .33rem;
+    text-align: center;
+    padding: 0 15%;
+    bottom: 1.5rem;
+}
+.swiper-slide-12 .content .text p {
+    padding-top: .2rem;
+    line-height: .36rem;
+    text-align: left;
+}
+.swiper-slide-12 .content .text .text-content p {
+    font-size: .22rem;
+    color: white;
+    line-height: .33rem;
+    text-align: center;
+    padding: 0 12%;
+}
+
+.swiper-slide-12 .content .text .text-content img {
+    margin-top: 2%;
+}
+
+.swiper-slide-12 .content .text .text-content p:nth-child(1) {
+    margin-top: 0.3rem;
+}
+
+.swiper-slide-12 .content .text .text-content p:nth-child(2) {
+    margin-top: 0.2rem;
+}
+
+.swiper-slide-12 .content .text .text-content p:nth-child(3) {
+    margin-top: 0.2rem;
+}
+
+.swiper-slide-12 .content .text > img:nth-child(1) {
+
+}
+
+.swiper-slide-12 .content .text > img:nth-child(2) {
+    position: absolute;
+    left: 36%;
+    top: 132px;
+    opacity: 0;
+}
+
+
+.index-bottom {
+    text-align: center;
+    width: 100%;
+    color: #464e58;
+    background-color: #0e151d;
+    padding-top: .3rem;
+    padding-bottom: .39rem;
+    padding-left: .3rem;
+    font-size: .2rem;
+    line-height: .2rem;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+.index-bottom p {
+    line-height: .36rem;
+}
+.index-bottom span {
+    padding-top: .2rem;
+    display: block;
+}
+.animte-12 {
+    transition: all 1s ease 0s;
+    animation: change-7 0.8s linear 1;
+    animation-fill-mode: forwards;
+}
+.swiper-slide-12 .mindiamonds {
+}
+.swiper-slide-12 .mindiamonds span:nth-child(1) {
+    left: 18%;
+    top: 4%;
+}
+
+.swiper-slide-12 .mindiamonds span:nth-child(2) {
+    left: 63%;
+    bottom: 55%;
+}
+.swiper-slide-12 .mindiamonds span:nth-child(3) {
+    left: -7%;
+    bottom: 44%;
+}
+.swiper-slide-12 .mindiamonds span:nth-child(4) {
+    right: 9%;
+    bottom: 4%;
+}
+.swiper-slide-12 .mindiamonds span:nth-child(1) img {
+    width: .89rem;
+}
+.swiper-slide-12 .mindiamonds span:nth-child(2) img {
+    width: 1.16rem;
+}
+.swiper-slide-12 .mindiamonds span:nth-child(3) img {
+    width: 1.14rem;
+}
+.swiper-slide-12 .mindiamonds span:nth-child(4) img {
+    width: 1.51rem;
+}
+/* 第十二屏动画 */
+.swiper-slide-active.swiper-slide-12 .content .img .in {
+    animation: to-right 0.8s linear 1;
+}
+.swiper-slide-active.swiper-slide-12 .content .img .out {
+    animation: to-left 0.8s linear 1;
+}
+
+@keyframes to-left {
+    0%{transform: translate(-20px,0px);opacity: 0;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+@keyframes to-right {
+    0%{transform: translate(20px,0px);opacity: 0;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+
+
+
+
+
+
+
+
+
+/* 全局文字动画 */
+
+/* 首页文字动画 */
+.animate-nomal {
+
+}
+/* up */
+.active .animate-up.animate-to-up-1 {
+    animation: to-up 1s linear 0s 1;
+}
+.active .animate-up.animate-to-up-2 {
+    animation: to-up 1.1s linear 0s 1;
+}
+.active .animate-up.animate-to-up-3 {
+    animation: to-up 1.2s linear 0s 1;
+}
+.active .animate-up.animate-to-up-4 {
+    animation: to-up 1.3s linear 0s 1;
+}
+.active .animate-up.animate-to-up-5 {
+    animation: to-up 1.4s linear 0s 1;
+}
+.active .animate-up.animate-to-up-6 {
+    animation: to-up 1.5s linear 0s 1;
+}
+.active .animate-up.animate-to-up-7 {
+    animation: to-up 0.9s linear 0s 1;
+}
+.active .animate-up.animate-to-up-8 {
+    animation: to-up 0.9s linear 0s 1;
+}
+.active .animate-up.animate-to-up-9 {
+    animation: to-up 0.9s linear 0s 1;
+}
+
+/* down */
+.active .animate-down.animate-to-down-1 {
+    animation: to-down 1s linear 0s 1;
+}
+.active .animate-down.animate-to-down-2 {
+    animation: to-down 1.1s linear 0s 1;
+}
+.active .animate-down.animate-to-down-3 {
+    animation: to-down 1.2s linear 0s 1;
+}
+.active .animate-down.animate-to-down-4 {
+    animation: to-down 1.3s linear 0s 1;
+}
+.active .animate-down.animate-to-down-5 {
+    animation: to-down 1.4s linear 0s 1;
+}
+
+
+
+@keyframes to-up {
+    0%{transform: translate(0px,50px);opacity: 0;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+@keyframes to-down {
+    0%{transform: translate(0px,-50px);opacity: 0;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+
+
+
+
+
+
+
+
+
+/* 首页小钻石缓动动画 */
+.swiper-slide-active .mindiamonds span:nth-child(1) {
+    animation: xiaozuanshi-left-right 8s linear 0s infinite;
+}
+.swiper-slide-active .mindiamonds span:nth-child(2) {
+    animation: xiaozuanshi-left-right 9s linear 1.2s infinite;
+}
+.swiper-slide-active .mindiamonds span:nth-child(3) {
+    animation: xiaozuanshi-left-right 11s linear 0.2s infinite;
+}
+.swiper-slide-active .mindiamonds span:nth-child(4) {
+    animation: xiaozuanshi-left-right 7s linear 0.5s infinite;
+}
+@keyframes xiaozuanshi-left-right{
+    0%{transform: translate(0px,0px);opacity: 1;}
+    25%{transform: translate(0px,-5px);opacity: 1;}
+    50%{transform: translate(-5px,6px);opacity: 1;}
+    75%{transform: translate(3px,-3px);opacity: 1;}
+    100% {transform: translate(0px,0px);opacity:1;}   
+}
+
+
+
+
+
+
+
+
+
+/*第六屏的内容区域01屏*/
+#swiper-container-2 .swiper-slide-1 .nomal {
+    margin-top: .6rem;
+    font-size: .36rem;
+    line-height: .64rem;
+    color: white;
+}
+
+#swiper-container-2 .swiper-slide-1 .nomal_des {
+    margin-top: .1rem;
+    font-size: .22rem;
+    line-height: .36rem;
+    color: white;
+    padding: 0 .4rem;    
+    text-align: left;
+}
+
+#swiper-container-2 .swiper-slide-1 .nomal_img {
+    margin-top: .2rem;
+}
+#swiper-container-2 .swiper-slide-1 .nomal_img img {
+    width: 80%;
+}
+
+/*第六屏的内容区域02屏*/
+#swiper-container-2 .swiper-slide-2 .nomal {
+    margin-top: .6rem;
+    font-size: .36rem;
+    line-height: .64rem;
+    color: white;
+}
+
+#swiper-container-2 .swiper-slide-2 .nomal_des {
+    margin-top: .25rem;
+    font-size: .22rem;
+    line-height: .36rem;
+    color: white;
+    padding: 0 .4rem;    
+    text-align: left;
+}
+.swiper-slide-7 .swiper-wrapper {
+    width: 100%;
+    height: 80%;
+}
+#swiper-container-2 .swiper-slide-2 .nomal_img {
+    margin-top: .5rem;
+}
+#swiper-container-2 .swiper-slide-2 .nomal_img img{
+    width: 80%;
+}
+/*第六屏的内容区域03屏*/
+#swiper-container-2 .swiper-slide-3 .nomal {
+    margin-top: .6rem;
+    font-size: .36rem;
+    line-height: .64rem;
+    color: white;
+}
+
+#swiper-container-2 .swiper-slide-3 .nomal_des {
+    margin-top: .25rem;
+    font-size: .22rem;
+    line-height: .36rem;
+    color: white;
+    padding: 0 .4rem;
+    text-align: left;
+}
+
+#swiper-container-2 .swiper-slide-3 .nomal_img {
+    margin-top: .5rem;
+}
+
+#swiper-container-2 .swiper-slide-3 .nomal_img img {
+    width: 80%;
+}
+
+
+
+/*轮播图*/
+#swiper-container-2 .swiper-slide .slide {
+    width: 5rem;
+    height: 7rem;
+    background: #0066CC;
+    position: absolute;
+    top: 0%;
+    left: -49%;
+    right: 0%;
+    bottom: 2.6rem;
+    margin: auto;
+}
+
+#swiper-container-2 .swiper-slide .swiper-slide-2 {
+    width: 5rem;
+    height: 7rem;
+    position: absolute;
+    top: 0%;
+    left: -49%;
+    right: 0%;
+    bottom: 2.6rem;
+    margin: auto;
+}
+.swiper-button-prev {
+    opacity: 1;
+}
+.swiper-button-next {
+    opacity: 1;
+}
+#swiper-container-2 .swiper-button-prev {
+    margin-left: .25rem;
+    margin-top: -20%;
+    opacity: 1;
+}
+
+#swiper-container-2 .swiper-button-next {
+    margin-right: .25rem;
+    margin-top: -20%;
+    opacity: 1;
+}
+
+#swiper-container-2 .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+}
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+}
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
+}
+
+.swiper-slide .zhezhao {
+    width: 5rem;
+    height: 7rem;
+    background: #000;
+    position: absolute;
+    top: 0%;
+    left: -49%;
+    right: 0%;
+    bottom: 2.6rem;
+    margin: auto;
+    opacity: 0.6;
+    transition: all 1s;
+}
+.swiper-slide-active .swiper-slide-active.swiper-slide .zhezhao {
+    opacity: 0;
+    transition: all 1s;
+}
+
+

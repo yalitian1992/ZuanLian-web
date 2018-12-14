@@ -1,0 +1,210 @@
+.main-nav .nav-button .spanbox {
+    padding-top: 1px;
+}
+.main-nav .nav-button span {
+    margin: 9px auto;
+    display: block;
+    width: 30px;
+    height: 2px;
+    opacity: 1;
+    transition: all 0.8s;
+    background: #1878F1;
+
+}
+
+
+
+/* 右边导航 */
+.main-nav {
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 888;
+    color: #fff;
+}
+.main-nav .nav-logo {
+    position: absolute;
+    z-index: 9999;
+    top: .4rem;
+    left: .6rem;
+    transition: all 1s;
+}
+.main-nav .nav-zhezhao {
+    position: absolute;
+    z-index: 886;
+    top: -50rem;
+    right: 0rem;
+    width: 50rem;
+    height: 100rem;
+    background: #000;
+    display: block;
+    opacity: 0;
+    transition: all 1s;
+    transform: translate(50rem,0);
+}
+
+.main-nav .nav-zhezhao.zhezhao-show {
+    display: block;
+    opacity: 0.9;
+    transition: all 1s;
+    transform: translate(0,0);
+}
+
+
+
+
+.zhezhao-translate {
+    transform: translate(-10%,0);
+    transition: all 1s ease-in-out 0s;
+}
+.main-nav .nav-button {
+position: fixed;
+    z-index: 9999;
+    top: .21rem;
+    right: .6rem;
+    width: .45rem;
+    height: .45rem;
+    line-height: .45rem;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #1878F1;
+    /* background: red; */
+}
+
+
+/* .main-nav .nav-button i {
+}
+.main-nav .nav-button i.baise {
+    color: #fff;
+} */
+.main-nav .nav-button .spanbox {
+padding-top: .02rem;
+}
+.main-nav .nav-button span {
+
+    margin: .18rem auto;
+    display: block;
+    width: .62rem;
+    height: .04rem;
+    opacity: 1;
+    transition: all 0.8s;
+    background: #1878F1;
+
+}
+/* 关闭样式 */
+.main-nav .nav-button .spanbox.to-off span.span1 {
+    transform: rotate(45deg);
+    transform-origin: 0rem .01rem;
+    transition: all  0.8s;
+    background: #fff;
+}
+.main-nav .nav-button .spanbox.to-off span.span2 {
+    opacity: 0;
+    transition: all 0.8s;
+    background: #fff;
+}
+.main-nav .nav-button .spanbox.to-off span.span3 {
+    transform: rotate(-45deg);
+    transform-origin: 0rem .01rem;
+    transition: all 0.8s;
+    background: #fff;
+}
+/* 打开样式 */
+.main-nav .nav-button .spanbox.to-on span.span1 {
+    transform: rotate(0deg);
+    transform-origin: 0 .01rem;
+    transition: all 0.8s;
+    background: #1878F1;
+}
+.main-nav .nav-button .spanbox.to-on span.span2 {
+    opacity: 1;
+    transition: all 0.8s;
+    background: #1878F1;
+}
+.main-nav .nav-button .spanbox.to-on span.span3 {
+    transform: rotate(0deg);
+    transform-origin: 0rem .01rem;
+    transition: all 0.8s;
+    background: #1878F1;
+}
+
+
+
+.main-nav .nav-list {
+position: absolute;
+    z-index: 999;
+    /* padding-left: .6rem; */
+    float: left;
+    width: 0rem;
+    min-width: 0rem;
+    height: 8.72rem;
+    right: 0rem;
+    overflow: hidden;
+    background: #1878F1;
+    opacity: 0;
+    transition: all 1s ease-in-out 0s;
+}
+.main-nav .nav-list ul {
+    height: 70%;
+    padding-top: .98rem;
+    padding-bottom: 2.3rem;
+}
+.main-nav .nav-list li {
+    position: relative;
+height: 0.98rem;
+    width: 10rem;
+    padding-left: .6rem;
+font-size: .26rem;
+    padding-left: 0.5rem;
+    line-height: 0.98rem;
+} 
+.main-nav .nav-list li.li1 {
+    background: #0245a0;
+}
+.main-nav .nav-list li.li1.li2 {
+    border-bottom: 1px solid #275B70;
+}
+.main-nav .nav-list li.li1.li3 a {
+line-height: 0.8rem;
+}
+.main-nav .nav-list li a {
+    line-height: .98rem;
+    display: block;
+    transition: all 1s;
+    padding-left: 0.5rem;
+}
+.main-nav .nav-list li span {
+    font-size: .14rem;
+    padding-top: .12rem;
+    opacity: 0.6;
+}
+
+.main-nav .nav-list li:nth-child(1) {
+
+}
+.main-nav .nav-list-show {
+width: 100%;
+    /* min-width: 600px; */
+    opacity: 1;
+    transition: all 1s ease-in-out 0s;
+}
+.main-nav .nav-list-hidden {
+    width: 0rem;
+    transition: all 0s ease-in-out 0s;
+}
+
+
+.main-nav .nav-list li a:hover {
+    transform: translate(.2rem,0);
+    transition: all 1s;
+    /* animation: nav-list 1s linear 0s 1; */
+}
+/* 主导航hover效果 */
+/* @keyframes nav-list {
+    0%{transform: translate(0px,0px);}
+    50%{transform: translate(-10px,0px);}
+    100%{transform: translate(0px,0px);}   
+} */

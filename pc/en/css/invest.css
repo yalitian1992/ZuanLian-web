@@ -1,0 +1,670 @@
+
+/* 分页全局样式 */
+#invest {
+    overflow: hidden;
+    background-image: url(../../public/images/joinus/shizi.png) ;
+}
+p {
+
+    letter-spacing: 0;
+}
+#invest .box {
+}
+#invest h3 span {
+    font-size: 29px;
+}
+#invest h5 {
+    color: #1876F4;
+    text-align: center;
+        font-weight: 600;
+}
+#invest h6 {
+    color: #1876F4;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: left;
+    line-height: 34px;
+}
+#invest section {
+    position: absolute;
+    z-index: 2;
+}
+dd {
+
+    letter-spacing: 0;
+}
+
+dt {
+    
+    letter-spacing: 0;
+}
+li {
+    
+    letter-spacing: 0;
+}
+
+/* 分页内容样式 */
+#invest .diamond{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+#invest .diamond1{
+    background-image: url(../../public/images/invest/zs1.png);
+    background-repeat: no-repeat;
+    top: 75px;
+    left: 1262px;
+}
+#invest .diamond2{
+background-image: url(../../public/images/invest/zs2.png);
+    background-repeat: no-repeat;
+top: 172px;
+    left: 400px;
+}
+#invest .diamond3{
+background-image: url(../../public/images/invest/zs3.png);
+    background-repeat: no-repeat;
+    top: -99px;
+    left: 578px;
+    z-index: 5;
+}
+
+#invest .diamond4{
+    background-image: url(../../public/images/invest/zs4.png);
+    background-repeat: no-repeat;
+    top: -72px;
+    left: 115px;
+    z-index: 2;
+}
+#invest .diamond5{
+    background-image: url(../../public/images/invest/zs5.png);
+    background-repeat: no-repeat;
+    top: -143px;
+    left: 345px;
+}
+#invest .diamond6{
+    background-image: url(../../public/images/invest/zs6.png);
+    background-repeat: no-repeat;
+    top: 115px;
+    left: -429px;
+    z-index: 2;
+}
+#invest .diamond7{
+    background-image: url(../../public/images/invest/zs7.png);
+    background-repeat: no-repeat;
+    top: 163px;
+    left: -247px;
+}
+#invest .diamond8{
+    background-image: url(../../public/images/invest/zs8.png);
+    background-repeat: no-repeat;
+top: -165px;
+    left: 365px;
+}
+#invest .diamond9{
+    background-image: url(../../public/images/invest/zs9.png);
+    background-repeat: no-repeat;
+    top: 113px;
+    left: -93px;
+}
+#invest .diamond10{
+    background-image: url(../../public/images/invest/zs10.png);
+    background-repeat: no-repeat;
+top: 295px;
+    left: 1220px;
+}
+
+#invest .banner {
+    width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 65px;
+}
+#invest .banner img {
+    width: 100%;
+}
+#invest .banner .wenzi-bgc {
+    position: absolute;
+    top: 123px;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    margin: auto;
+}
+#invest .banner .wenzi-bgc img {
+    width: 1074px;
+}
+#invest .banner .text {
+    position: absolute;
+    width: 735px;
+    height: 125px;
+    top: -20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#invest .banner .text h3 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 54px;
+    font-size: 72px;
+}
+#invest .banner .text p {
+    color: #fff;
+    padding: 30px;
+    border: 1px solid #49FDFE;
+}
+
+#invest .content {
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+#invest .li-dian li {
+        font-size: 14px;
+    color: #707186;
+    line-height: 28px;
+    padding-top: 18px;
+    padding-left: 12px;
+    position: relative;
+}
+#invest .li-dian li:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 29px;
+    left: 0;
+    background-color: #707186;
+
+}
+
+#invest .jizhi h5 {
+    margin-bottom: 85px;
+}
+#invest .jizhi .min-tittle {
+    font-size: 18px;
+    color: #1876F4;
+    padding-bottom: 14px;
+    padding-top: 30px;
+    font-weight: 600;
+}
+#invest .jizhi h5:after {
+    content: "";
+    width: 95px;
+    height: 4px;
+    top: 193px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    background: #1876F4;
+}
+#invest .jizhi section {
+    width: 939px;
+    position: relative;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 60px #eee;
+}
+#invest .jizhi section.s1 {
+    margin:0 auto;
+}
+#invest .jizhi section.s2 {
+    width: 510px;
+    margin-top: 100px;
+    position: relative;
+}
+#invest .jizhi section.s2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 180px;
+    background-image: url(../../public/images/invest/gia.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -414px;
+    top: 71px;
+
+}
+#invest .jizhi section.s3 {
+    width: 544px;
+    margin-top: 100px;
+    margin-left: 360px;
+}
+#invest .jizhi section.s3 h6 {
+    text-align: center;
+}
+#invest .jizhi section.s3 .p1 {
+    padding-top: 17px;
+    font-size: 16px;
+    position: relative;
+    padding-left: 28px;
+}
+#invest .jizhi section.s3 .p1:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../../public/images/invest/tanhao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    top: 17px;
+}
+#invest .jizhi section.s3 .p1 .span1 {
+    color: #E88228;
+}
+#invest .jizhi section.s3 .p1 .span2 {
+    color: #1876F4;
+}
+#invest .jizhi dl {
+    margin-bottom: -30px;
+}
+#invest .jizhi dt {
+    position: relative;
+    padding-bottom: 5px;
+    color: #2C3E55;
+    font-weight: 600;
+    font-size: 14px;
+}
+#invest .jizhi dt:after {
+content: "";
+    position: absolute;
+    display: block;
+    background-color: #000;
+    width: 4px;
+    height: 4px;
+    top: 6px;
+    left: -11px;
+    border-radius: 50%;
+}
+#invest .jizhi section.s4 {
+    width: 910px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#invest .jizhi table {
+margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 60px #eee;
+}
+
+#invest .jizhi table .fengexian {
+    border-right: 1px solid #c3d8f3;
+}
+#invest .jizhi table th{
+    background-color: #76A8E9;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0 20px;
+}
+#invest .jizhi table td {
+    height: 80px;
+    line-height: 64px;
+    font-size: 14px;
+    padding: 0 20px;
+    letter-spacing: 0;
+}
+#invest .jizhi table tr:nth-child(2n) {
+    background-color: #E7F3FA;
+}
+#invest .jizhi table tr:nth-child(2n+1) {
+    background-color: #D2E9F6;
+}
+#invest .jizhi section.s4 .p1 {
+    padding-top: 17px;
+    font-size: 16px;
+    position: relative;
+    padding-left: 28px;
+    color: #E88228;
+}
+#invest .jizhi section.s4 .p1:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../../public/images/invest/tanhao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    top: 17px;
+}
+#invest .jizhi section.s5 {
+    width: 500px;
+    margin-top: 100px;
+}
+#invest .jizhi section.s5:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 219px;
+    height: 212px;
+    background-image: url(../../public/images/invest/zs6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -277px;
+    top: 17px;
+}
+#invest .jizhi section.s6 {
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+#invest .jizhi section.s7 {
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 400px;
+    position: relative;
+}
+#invest .jizhi section.s7:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 600px;
+    background-image: url(../../public/images/invest/shishu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -400px;
+    top: -216px;
+}
+#invest .jizhi section.s8 {
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+
+
+
+
+#invest .why {
+    width: 1200px;
+    padding-top: 60px;
+    height: 1738px;
+    position: relative;
+}
+#invest .why h5:after {
+    content: "";
+    width: 95px;
+    height: 4px;
+    top: 120px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    background: #1876F4;
+}
+#invest .why dt {
+    position: relative;
+}
+#invest .why dt:after {
+content: "";
+    position: absolute;
+    display: block;
+    background-color: #000;
+    width: 4px;
+    height: 4px;
+    top: 6px;
+    left: -11px;
+    border-radius: 50%;
+}
+#invest .why section {
+    width: 500px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 60px #eee;
+}
+#invest .why section.section-1 {
+    top: 257px;
+    left: 3%;
+    width: 505px;
+}
+#invest .why section.section-2 {
+    top: 865px;
+    left: 37%;
+    width: 490px;
+}
+#invest .why section.section-3 {
+    top: 1254px;
+    left: 70px;
+    width: 500px;
+}
+#invest .why section.section-4 {
+    top: 1289px;
+    left: 8%;
+    width: 629px;
+}
+
+
+#invest .why .shuzi-1 {
+display: block;
+    position: absolute;
+    width: 182px;
+    height: 147px;
+    top: 447px;
+    left: 50%;
+    background-image: url(../../public/images/invest/num1.png);
+    z-index: 1;
+}
+#invest .why .shuzi-2 {
+display: block;
+    position: absolute;
+    width: 229px;
+    height: 151px;
+    top: 1078px;
+    left: 21%;
+    background-image: url(../../public/images/invest/num2.png);
+    z-index: 1;
+}
+#invest .why .shuzi-3 {
+    display: block;
+    position: absolute;
+    width: 228px;
+    height: 147px;
+    top: 1408px;
+    left: 51%;
+    background-image: url(../../public/images/invest/num3.png);
+    z-index: 1;
+}
+#invest .why .shuzi-4 {
+    display: block;
+    position: absolute;
+    width: 227px;
+    height: 147px;
+    top: 2069px;
+    left: 11%;
+    background-image: url(../../public/images/invest/num4.png);
+    z-index: 1;
+}
+
+
+
+
+
+
+#invest .where h5:after {
+content: "";
+    width: 95px;
+    height: 4px;
+    top: 124px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    background: #1876F4;
+}
+#invest .where {
+    position: relative;
+    height: 575px;
+    margin-top: 100px;
+}
+#invest .where h6 {
+    text-align: center;
+}
+#invest .where section {
+top: 146px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* width: 46%; */
+    /* max-width: 1000px; */
+    /* min-width: 800px; */
+    padding: 50px 100px;
+    background-color: #fff;
+    box-shadow: 0 10px 60px #eee;
+}
+#invest .where section:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1200px;
+    max-width: 1200px;
+    min-width: 1000px;
+    height: 111px;
+    bottom: -111px;
+    left: 0;
+    background: url(../../public/images/invest/touying.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#invest .where section p {
+    margin-bottom: 22px;
+}
+#invest .where section p.p1 {
+text-align: center;
+    line-height: 60px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+}
+#invest .where section p.p1 a {
+    color: #1876F4;
+    padding: 16px 30px;
+    padding-right: 47px;
+    border: 1px solid #1876F4;
+    border-radius: 30px 30px 30px;
+    background: url(../../public/images/invest/jiantou-lan.png);
+    background-repeat: no-repeat;
+        background-position: 157px 14px;
+}
+#invest .where p.p4 {
+    text-align: center;
+    font-size: 16px;
+    color: #1876F4;
+    margin-top: -6px;
+    margin-bottom: 35px;
+}
+#invest .how {
+    padding-top: 80px;
+}
+
+#invest .how p.p1 {
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+#invest .how p.p1 a {
+    color: #E88228;
+    padding: 16px 30px;
+    padding-right: 49px;
+    border: 1px solid #E88228;
+    border-radius: 30px 30px 30px;
+    background: url(../../public/images/invest/jiantou-cheng.png);
+    background-repeat: no-repeat;
+    background-position: 461px 50%;
+}
+#invest .how ul {
+    width: 630px;
+    height: 325px;
+    margin: 0 auto;
+    padding-top: 65px;
+    position: relative;
+
+}
+#invest .how ul li {
+    width: 100%;
+    height: 325px;
+}
+#invest .how ul li span{
+height: 246px;
+    display: block;
+}
+
+#invest .how ul .li-1 {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+#invest .how ul .li-2 {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+#invest .how ul li.wenzi-how-1 {
+    position: absolute;
+    top: 71px;
+    left: -114px;
+    width: 148px;
+    height: 119px;
+    z-index: 1;
+    background-image: url(../../public/images/invest/foot1.png);
+}
+#invest .how ul li.wenzi-how-2 {
+    position: absolute;
+    top: 142px;
+    right: -91px;
+    width: 186px;
+    height: 121px;
+    z-index: 1;
+    background-image: url(../../public/images/invest/foot2.png);
+}
+#invest .how ul .li-1 span {
+    background-image: url(../../public/images/invest/how-1.png);
+    background-repeat: no-repeat;
+background-position: 55% 50%;
+}
+#invest .how ul .li-2 span {
+    background-image: url(../../public/images/invest/how-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#invest .how ul li dt {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;    
+    margin-top: -5px;
+}
+#invest .how ul li dd {
+    text-align: center;
+    line-height: 23px;
+    font-size: 16px;
+}
+#invest .how ul li dd a {
+    color: #1876F4;
+}

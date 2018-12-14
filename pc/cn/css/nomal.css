@@ -1,0 +1,167 @@
+html {
+}
+body {
+	background-color: #EDF2F7;
+	background-image: url(../../public/images/nomal/bgc-diceng.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#nomal {
+	min-width: 1200px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background-position: 900px 184px;
+	background-repeat: no-repeat;
+}
+#nomal .logo {
+    left: 4%;
+    top: 30px;
+}
+.box {
+	margin : 0 -1%;
+}
+.box .content {
+	height: 100%;
+}
+#nomal .box-two {
+	padding-top: 310px;
+	min-width: 1200px;
+}
+#nomal .box-two .left {
+	width: 50%;
+	min-width: 600px;
+	float: left;
+}
+#nomal .box-two .left .info {
+    width: 80%;
+    /* height: 210px; */
+    margin: 0 auto;
+    margin-left: 10%;
+    padding-right: 10%;
+    font-size: 16px;
+
+}
+#nomal .box-two .left .pingtai {
+    width: 90%;
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 300px;
+    margin-left: 10%
+}
+#nomal .box-two .left .pingtai .web {
+    float: left;
+    /* margin-left: 100px; */
+    width: 32%;
+}
+#nomal .box-two .left .pingtai .mobile {
+    float: left;
+    /* margin-left: 80px; */
+    width: 50%;
+}
+#nomal .box-two .left .pingtai .web span.box {
+    width: 118px;
+    height: 96px;
+    display: block;
+    background-image: url(../../public/images/nomal/web.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+#nomal .box-two .left .pingtai .web p {
+	width: 118px;
+	text-align: center;
+    position: relative;
+    font-size: 16px;
+}
+#nomal .box-two .left .pingtai .web p span.web-bgc {
+    overflow: hidden;
+    width: 82px;
+    height: 25px;
+    display: block;
+    position: relative;
+    border-radius: 38px 38px 38px;
+    border: 1px solid #1876F4;    
+    margin: 0 auto;
+}
+#nomal .box-two .left .pingtai .web p span.web-bgc:hover i {
+    top: 0;
+    transition: all 0.5s;
+}
+#nomal .box-two .left .pingtai .web p span.web-bgc:hover a {
+    color: #fff;
+}
+#nomal .box-two .left .pingtai .web a {
+    position: relative;
+    z-index: 2;
+    padding: 5px 10px;
+    border-radius: 10px 10px 10px;
+    color: #1876F4;
+    transition: all 1s;
+    overflow: hidden;
+    /* font-weight: bold; */
+    line-height: 25px;
+}
+#nomal .box-two .left .pingtai .web a:hover {
+    color: #fff;
+
+}
+#nomal .box-two .left .pingtai .web  i {
+    position: absolute;
+    background: red;
+    display: block;
+    width: 82px;
+    height: 25px;
+    top: 25px;
+    left: 0;
+    background-color: #1876F4;
+    z-index: 1;
+    transition: all 0.5s;
+}
+#nomal .box-two .left .pingtai .mobile span.box {
+    width: 118px;
+    height: 96px;
+    display: block;
+    background-image: url(../../public/images/nomal/ecode.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+	
+}
+#nomal .box-two .left .pingtai .mobile p {
+	width: 118px;
+	text-align: center;
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+#nomal .box-two .left .pingtai .mobile a {
+    color: #1876F4;
+    transition: all 1s;
+}
+#nomal .box-two .right {
+	width: 50%;
+	min-width: 600px;
+	float: left;
+	height: 455px;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#nomal .box-two .right .iphone {
+	width: 30%;
+	margin-left:  0;
+	float: left;
+	height: 455px;
+	background-repeat: no-repeat;
+}
+#nomal .box-two .right .ipad {
+width: 70%;
+    min-width: 300px;
+    float: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -60px;
+    top: -117px;
+}
+

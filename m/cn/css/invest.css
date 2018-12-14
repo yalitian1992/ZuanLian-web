@@ -1,0 +1,356 @@
+body {
+    background: #EAF2FC;
+}
+
+/* banner部分 */
+.banner {
+    width: 7.5rem;
+    height: 4.8rem;
+    background-image: url(../../public/images/bc/invest-3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner .title {
+    position: absolute;
+    width: 6.8rem;
+    height: 1.76rem;
+    background-image: url(../images/invest/title@3x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 3.56rem;
+    left: .6rem;
+}
+
+/* 主题内容 */
+.pub-box {
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+.pub-box p {
+    font-size: .22rem;
+    line-height: .33rem;
+    text-indent: 2em;
+}
+.pub-box .abstract {
+    padding-top: 1rem;
+    color: #8f9bab;
+}
+.pub-box .main-contain {
+    color: #8f9bab;
+}
+.pub-box .main-contain .title {
+    padding-top: .6rem;
+    text-align: center;
+}
+.pub-box .main-contain .title h3  {
+    font-size: .36rem;
+    line-height: .54rem;
+    color: #1876F4;
+    
+}
+.pub-box .main-contain .inbox {
+    overflow: hidden;
+    position: relative;
+}
+.pub-box .main-contain .section {
+    background-color: #fff;
+    padding: .3rem;
+    box-shadow: 0 0 30px #D2D2D2;
+    width: 5.8rem;
+    margin-top: 1.2rem;
+    position: relative;
+    z-index: 2;
+
+}
+.pub-box.why .section {
+    margin-left: .2rem;
+    margin-bottom: .2rem;
+    margin-right: .2rem;
+}
+.pub-box.why .section img {
+    width: 100%;
+    margin-top: 10px;
+}
+.pub-box .main-contain .section.left {
+    width: 5.4rem;
+    float: left;
+}
+
+.pub-box .main-contain .section.right {
+    width: 5.4rem;
+    float: right;
+}
+.pub-box .main-contain .section.width-100 {
+    z-index: 2;
+}
+.pub-box .main-contain .section .text {
+    position: relative;
+    z-index: 2;
+}
+.pub-box .main-contain .section .text h5 {
+    font-size: .25rem;
+    line-height: .36rem;
+    padding-bottom: .2rem;
+    color: #1876F4;
+}
+.pub-box .main-contain .section .text p {
+    font-size: .22rem;
+    line-height: .33rem;
+    text-indent: 0;
+}
+
+.pub-box .main-contain .section .text ul.ul-list li {
+    font-size: .22rem;
+    line-height: .22rem;
+    padding-bottom: .11rem;
+    text-indent: 0;
+    color: #8f9bab;
+    position: relative;
+    text-indent: .2rem;
+    padding-left: .15rem;
+}
+.pub-box.why .main-contain .section .text ul.ul-list li:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background-color: #8f9bab;
+    top: .1rem;
+    left: 0;
+}
+.pub-box .main-contain .section .text ul.ul-list li {
+    font-size: .22rem;
+    line-height: .33rem;
+    padding-bottom: .4rem;
+    text-indent: 0;
+}
+
+.pub-box .main-contain .section .text dl dt {
+    font-size: .22rem;
+    line-height: .22rem;
+    padding-bottom: .11rem;
+    text-indent: 0;
+    color: #2C3E55;
+    position: relative;
+    text-indent: .2rem;
+}
+.pub-box.why .main-contain .section .text dl dt:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background-color: #2C3E55;
+    top: .06rem;
+    left: 0;
+}
+.pub-box .main-contain .section .text dl dd {
+    font-size: .22rem;
+    line-height: .33rem;
+    padding-bottom: .4rem;
+    text-indent: 0;
+}
+.pub-box .main-contain .section .text .link {
+    color: #e77f23;
+}
+.pub-box .main-contain .section .text .link a {
+    color: #1876F4;
+}
+
+
+.why .inbox .bgc {
+    position: absolute;
+    width: 1.72rem;
+    height: 1.09rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.why .bgc.bgc1 {
+    top: .4rem;
+    left: 0%;
+    background-image: url(../../public/images/bc/11_3x.png);
+}
+.why .bgc.bgc2 {
+    top: .4rem;
+    right: 0rem;
+    background-image: url(../../public/images/bc/02_3x.png);
+}
+.why .bgc.bgc3 {
+    top: .4rem;
+    left: 0%;
+    background-image: url(../../public/images/bc/33_3x.png);
+}
+.why .bgc.bgc4 {
+    top: .4rem;
+    right: 0rem;
+    background-image: url(../../public/images/bc/44_3x.png);
+}
+
+.why span.yellow {
+    color:#e77f23; 
+}
+
+
+.what {
+
+}
+.why table {
+margin: 0 auto;
+    text-align: center;
+    margin-top: .4rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 50px #ccc;
+    position: relative;
+    transition: all 1s;
+
+}
+.why tr:nth-child(2n) {
+    background-color: #DCE8F9;
+}
+.why tr:nth-child(2n+1) {
+    background-color: #D0DEF0;
+}
+.why table tr th {
+    font-size: .24rem;
+    color: #fff;
+    background-color: #76A8E9;
+}
+.why table tr th.th1 {
+    width: 1.45rem;
+    padding: 0.52rem 0.4rem;
+    border-right: 1px solid #EAF2FC;
+}
+
+.why table td {
+    font-size: .22rem;
+    line-height: .35rem;
+    padding: .20rem .22rem;
+    color: #2c3e55;
+}
+.why table tr td:nth-child(2) {
+    text-align: left;
+}
+.why table td.xian {
+    border-right: 1px solid #EAF2FC;
+}
+.why table:after {
+    content: "实际可交易品种以交易所公布的为准";
+    display: block;
+    position: absolute;
+    width: 5.2rem;
+    height: .27rem;
+    font-size: .22rem;
+    color: #e77f23;
+    text-indent: 2em;
+    background-image: url(../../public/images/invest/th@3x.png);
+    background-repeat: no-repeat;
+    bottom: -50px;
+    left: 1px;
+}
+
+.pub-box.why .lianjie {
+    padding-bottom: .1rem;
+}
+.pub-box.why .lianjie p {
+    width: 2.7rem;
+    height: .6rem;
+    font-size: .24rem;
+    line-height: .24rem;
+    color: #1876F4;
+    border-radius: 50px 50px 50px;
+    border: 1px solid #1876F4;
+    margin: .2rem auto;
+    text-align: center;
+    text-indent: -1em;
+    background-image: url(../../public/images/invest/sj@3x.png);
+    background-repeat: no-repeat;
+    background-position: 86% 50%;
+    background-size: .11rem .19rem;
+} 
+.pub-box.why .lianjie p a {
+    color: #1876F4;
+    line-height: .6rem;
+    
+}
+
+
+
+.pub-box.how .text {
+    padding-bottom: .4rem;
+}
+.pub-box.how .text p {
+    width: 2.7rem;
+    height: .6rem;
+    font-size: .24rem;
+    line-height: .6rem;
+    color: #E88228;
+    border-radius: 50px 50px 50px;
+    border: 1px solid #E88228;
+    margin: .4rem auto;
+    text-align: center;
+    text-indent: -1em;
+    background-image: url(../../public/images/invest/js@3x.png);
+    background-repeat: no-repeat;
+    background-position: 86% 50%;
+    background-size: .11rem .19rem;
+} 
+.pub-box.how .text p a {
+    color: #E88228;
+}
+
+.pub-box.how .info {
+    margin-top: .6rem;
+}
+.pub-box.how .info .pic {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 0 auto;
+}
+.pub-box.how .info .left .pic {
+    background-image: url(../../public/images/invest/ws@3x.png);
+    background-size: contain;
+    background-position: center;
+}
+.pub-box.how .info .right .pic {
+    background-image: url(../../public/images/invest/xs@3x.png);
+    background-size: contain;
+    background-position: center;
+}
+.pub-box.how .info .left {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.pub-box.how .info .right {
+    width: 100%;
+    height: 100%;
+    /* float: right; */
+}
+.pub-box.how .info dl {
+    text-align: center;
+}
+.pub-box.how .info dt {
+    font-size: .22rem;
+    line-height: .22rem;
+    padding-bottom: .11rem;
+    text-indent: 0;
+    color: #2C3E55;
+    position: relative;
+    text-indent: 0rem;
+}
+.pub-box.how .info dd {
+    font-size: .20rem;
+    line-height: .33rem;
+    text-indent: 0;
+}
+
+
+
+
+
+
+

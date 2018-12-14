@@ -1,0 +1,345 @@
+		#joinus .view {
+			/* width: 100%; */
+			height: 470px;
+			position: relative;
+			overflow: hidden;
+			border: 1px solid #CCC;
+		}
+
+		#joinus .view ul {
+			width: 3510px;
+			height: 470px;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			position: absolute;
+			left: 0;
+			animation: move 60s linear infinite;
+		}
+
+
+		#joinus .view ul:hover {
+			animation-play-state: paused;
+		}
+
+		#joinus .view li {
+			float: left;
+			font-size: 0;
+		}
+		@keyframes move {
+			0% {
+				left: 0;
+			}
+
+			100% {
+				left: -1755px;
+			}
+		}
+		#joinus .view .title {
+			width: 869px;
+			height: 178px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}	
+		#joinus .view .title img {
+			margin: 0 auto;
+		}
+#joinus .banner {
+    width: 100%;
+    height: 472px;
+    position: relative;
+}
+#joinus .banner .title {
+    position: absolute;
+    z-index: 5;
+    width: 627px;
+    height: 182px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+#joinus .info {
+    width: 100%;
+    min-width: 1200px;
+    height: 542px;
+    background-image: url(../../public/../public/images/joinus/shizi.png);
+    position: relative;
+    margin: 0 auto;
+
+}
+
+#joinus .info span {
+	/*position: absolute;*/
+	/*display: block;*/
+
+}
+
+#joinus .info span.diamond1 {
+width: 158px;
+    height: 92px;
+    top: -74px;
+    left: 73%;
+    background-image: url(../../public/images/joinus/join-diamond1.png);
+    background-repeat: no-repeat;
+}
+#joinus .info span.diamond2 {
+    width: 157px;
+    height: 151px;
+    top: 133px;
+    left: 7%;
+    background-image: url(../../public/images/joinus/join-diamond2.png);
+    background-repeat: no-repeat;}
+
+
+#joinus .info span.diamond3 {
+    width: 186px;
+    height: 147px;
+    top: 365px;
+    bottom: 0;
+    left: 80%;
+    background-image: url(../../public/images/joinus/join-diamond3.png);
+    background-repeat: no-repeat;
+}
+#joinus .info .info-top {
+	position: relative;
+}
+#joinus .info .info-top .text {
+    width: 755px;
+    height: 82px;
+    padding: 30px 60px;
+    position: absolute;
+    top: -79px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 5;
+}
+#joinus .info .info-top .shadow {
+    width: 755px;
+    content: "";
+    display: block;
+    height: 74px;
+    position: absolute;
+    top: -9px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px #eee,-5px 5px 30px #eee;
+    padding: 0 60px;
+    z-index: 1;
+}
+#joinus .info .info-top h6 {
+font-size: 24px;
+    color: #247CF4;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#joinus .info .info-top p {
+	font-size: 14px;
+	line-height: 23px;
+	color: #5F6C7C;
+}
+#joinus .info .info-mid {
+	width: 755px;
+	height: 235px;
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+#joinus .info .info-mid li {
+  width: 180px;
+  height: 44px;
+  float: left;
+  margin-top: 28px;
+  line-height: 44px;
+  color: #3185F5;
+  text-indent: 54px;
+  font-size: 16px;
+}
+    #joinus .info .info-mid li p {
+      width: 256px;
+      height: 44px;
+      float: left;
+      line-height: 44px;
+      color: #3185F5;
+      text-indent: 50px;
+      font-size: 16px;
+      -webkit-tap-highlight-color:  rgba(0,0,0,0);
+    }
+    #joinus .info .info-mid li:nth-child(1){
+      background-image: url(../../public/images/joinus/join7.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+    #joinus .info .info-mid li:nth-child(2){
+      background-image: url(../../public/images/joinus/join4.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+      /* margin: 28px 144px; */
+      margin-left:100px;
+      margin-right:100px;
+    }
+    #joinus .info .info-mid li:nth-child(3){
+      background-image: url(../../public/images/joinus/join8.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+    #joinus .info .info-mid li:nth-child(4){
+      background-image: url(../../public/images/joinus/join8.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+
+#joinus .info .info-bottom {
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 295px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#joinus .info .info-bottom h5 {
+    line-height: 44px;
+    width: 175px;
+    height: 44px;
+    color: #3185F5;
+    font-size: 16px;
+    border: 2px solid #3185F5;
+    border-radius: 22px 22px 22px;
+    text-indent: -31px;
+}
+#joinus .info .info-bottom:after {
+    width: 24px;
+    height: 24px;
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../../public/images/joinus/air.png);
+    top: 11px;
+    left: 133px;
+}
+
+#joinus .info .info-bottom p {
+	padding-top: 30px;
+	width: 175px;
+	height: 44px;
+	color: #3185F5;
+	font-size: 16px;
+}
+
+
+
+    .pop-box {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: rgba(00,17,25,0.85);
+      /* display: none; */
+      z-index: 334;
+      top: 0;
+      left: 0;
+    }
+    ol {
+      height: 500px;
+      overflow-y:scroll;
+    }
+    dl.dl-list {
+      text-indent: 0;
+      color: #2C3E55;
+      height: 325px;
+      overflow-y: scroll;
+      width: 898px;
+    }
+    dl.dl-list dt {
+      font-size: 22px;
+      font-weight: bolder;
+      padding-bottom: 15px;
+      padding-top: 30px;
+    }
+    dl.dl-list dd {
+      padding-bottom: 0;
+      color: #2C3E55;
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 12px;
+      position: relative;
+    }
+    dl.dl-list dd:before{
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #2C3E55;
+    }
+
+
+
+
+    .detail-box {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+    }
+    .detail-text {
+      position: absolute;
+      width: 940px;
+      height: 500px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 9999;
+      background-color: #C1D6F1;
+      overflow: hidden;
+    }
+    .detail-text .text {
+      padding: 30px 18px 30px 60px;
+    }
+    .detail-text .text .img img{
+      display: block;
+      margin: 0 auto;
+    }
+    .detail-text .text .img {
+      text-align: center;
+    }
+
+    .pop-show-btn {
+      cursor: pointer;
+    }
+    .pop-close-btn {
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      top:20px;
+      right: 20px;
+      background-image: url(../../public/images/joinus/pop-close-btn.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }

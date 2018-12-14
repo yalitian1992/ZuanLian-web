@@ -1,0 +1,56 @@
+body {
+    background: #EAF2FC;
+}
+
+
+/* banner部分 */
+.banner {
+    width: 7.5rem;
+    height: 4.8rem;
+    background-image: url(../../public/images/bc/contact@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner .title {
+    position: absolute;
+    width: 6.8rem;
+    height: 1.76rem;
+    background-image: url(../images/contact/title@3x_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 3.56rem;
+    left: .6rem;
+}
+
+.pub-box {
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+.pub-box ul {
+	width: 100%;
+	height: .64rem;
+}
+.pub-box ul li:nth-child(1) {
+	width: .75rem;
+	color: #2c3e55;
+	font-weight: 800;
+	padding-right: .2rem;
+}
+.pub-box ul li {
+    font-size: .24rem;
+    line-height: .24rem;
+    padding-bottom: .4rem;
+    color: #8F9BAB;
+    float: left;
+}
+.pub-box .info {
+    padding-top: 1rem;
+    color: #8f9bab;
+}
+.map {
+	width: 100%;
+	height: 4.06rem;
+	background-image: url(../../public/images/contact/map@3x.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,39 @@
+
+h3 {
+    font-size: 65px;
+    line-height: 65px;
+    color: #2C3E55;
+    padding-bottom: 50px;
+}
+h5 {
+    font-size: 48px;
+    position: relative;
+    color: #2D2B51;
+    font-weight: 600;
+    /* margin-bottom: 100px; */
+}
+h6 {
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 10px;
+
+}
+p {
+        font-size: 14px;
+    color: #707186;
+    line-height: 28px;
+}
+dt {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 10px;
+}
+dd {
+        font-size: 14px;
+    color: #707186;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+
+
